@@ -1,0 +1,243 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  padding: 0rem, 2rem;
+  margin:0;
+}
+
+
+
+.top {
+  display:block;
+  text-align: center;
+  /*background-color: #6F747D;*/
+}
+
+.top h1, .top p, .top a{
+  font-size: 1em;
+  margin:0;
+  padding:10px 0;
+  font-family: 'Open Sans', serif;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/* MAIN NAVIGATION */
+.nav1 {
+  overflow:auto;
+  background-color :#FFFFFF;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.nav1 nav {
+  float: right;
+}
+
+.nav1 nav a {
+  font-family: 'Open Sans', serif;
+  color: #000000;
+  font-size:12px;;
+  text-transform:uppercase;
+  text-decoration:none;
+  font-weight:bolder;
+
+  padding-top :15px;
+  padding-bottom:15px;
+  padding-left:30px;
+  padding-right:30px;
+
+  transition: all 0.3s ease 0s;
+}
+
+.nav1 nav a:hover {
+  background-color:#E5E1E5;
+}
+
+.topbox {
+  display: flex;
+  justify-content: flex-end;
+  background-color:#FFFFFF;
+
+  padding-right:500em;
+  position:fixed;
+}
+
+.button-item-nav {
+  display:flex; /* for some reason display:flex must be on both topbox and buttonnav :/ */
+}
+
+.button-item-nav a {
+  /*
+  border-style: solid;
+  border-width: 1px;
+  */
+
+  font-family: 'Open Sans', serif;
+  text-transform: uppercase;
+  font-weight:bolder;
+  font-size:0.8em;
+
+  color: #000000;
+  flex-grow: 1;  
+  flex-basis: 0.4em;
+
+  transition: all 0.3s ease 0s;
+
+  background-color:#FFFFFF;
+  text-align: center;
+
+  padding: 1em 2.5em;
+}
+
+.button-item-nav  :hover {
+  background-color:#E5E1E5;
+}
+
+/* TRYING OUT FLEXBOX HERE */
+.box {
+  display: flex;
+  margin-right:10%;
+  margin-left:10%;
+  margin-top:1%;
+  margin-bottom:2%;
+}
+
+.box-item-nav {
+  border-style:solid;
+  border-width:1px;
+  flex-grow: 1;    
+  flex-basis: 20em;
+  margin-left:1em;
+  margin-right:1em;
+  margin-top:1em;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s ease 0s;
+
+}
+
+.box-item-nav:hover {
+  background-color: rgb(220, 220, 220);
+  filter: blur(20px);
+}
+
+.picture img {
+  width:100%;
+}
+
+.text {
+
+}
+
+
+.text h2 {
+  font-family: 'Open Sans', serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.text p {file:///Users/huisili/Dropbox/styleguide/index.html#Contact
+  font-family: 'Open Sans', serif;
+  font-size: 0.75em;
+  text-align: center;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 50em) {
+  .box {
+    flex-wrap: wrap;
+    margin-right:30%;
+    margin-left:30%;
+  }
+}
+
+
+
+[class^='col-'] { /*only select things that begin with col- */
+ /* float:left;*/
+  padding:0;
+  margin:0.5em;
+  text-align:center;
+}
+
+
+.col-1of9 {
+  border-style:solid;
+  border-width:1px;
+  display: inline-block;
+  width:10%;
+}
+
+.col-2of9 {
+  border-style:solid;
+  border-width:1px;
+  display: inline-block;
+  width:20%;
+}
+
+.col-3of9 {
+  border-color: #000000;
+  display: inline-block;
+  width:30%;
+  height:auto;
+}
+
+.col-4of9 {
+  border-style:solid;
+  border-width:1px;
+  display: inline-block;
+  width:40%;
+}
+
+.col-5of9 {
+  border-style:solid;
+  border-width:1px;
+  display: inline-block;
+  width:50%;
+}
+
+.col-6of9 {
+  border-style:solid;
+  border-width:1px;
+  display: inline-block;
+  width:60%;
+}
+
+.col-7of9 {
+  border-style:solid;
+  border-width:1px;
+  display: inline-block;
+  width:70%;
+}
+
+.col-8of9 {
+  border-style:solid;
+  border-width:1px;
+  display: inline-block;
+  width:80;
+}
+
+.col-9of9 {
+  border-style:solid;
+  border-width:1px;
+  display: inline-block;
+  width:90%;
+}
