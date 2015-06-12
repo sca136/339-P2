@@ -11,11 +11,12 @@
 
 
 /*FONTS*/
+
 h3{
   font-size: 1em;
   font-family: 'Open Sans', serif;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #DDAC72;
 }
 
 h2{
@@ -39,12 +40,15 @@ h1{
 }
 
 p{
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: 'Open Sans', serif;
   color: #FFFFFF;
   text-decoration: none;
 }
 
+strong{
+  color: #061445;
+}
 
 
 /*BACKGROUND*/
@@ -90,7 +94,7 @@ nav {
   left:0;
   width:200px;
   height:100%;
-  background-color:#FFFFFF;
+  background-color: rgba(142, 51, 33, 0.19);
   opacity: 0.9;
 
 }
