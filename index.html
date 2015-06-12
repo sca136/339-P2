@@ -17,44 +17,42 @@
 
   <body>
     <div class="background">
-
-
       <div class="navBox">
         <nav class="topbox">
-
+            <div class = "button-item-nav">
+              <a href="#Buttons" class="button-nav">Buttons</a>
+            </div>
+           
+            <div class = "button-item-nav">
+              <a href="#Fonts" class="button-nav">Font Type</a>
+            </div>
 
             <div class = "button-item-nav">
-              <a href="#Home" class="button-nav">Buttons</a>
+              <a href="#Colours" class="button-nav">Colours</a>
             </div>
 
             <div class = "button-item-nav">
-              <a href="#Product" class="button-nav">Font Type</a>
-            </div>
-
-
-            <div class = "button-item-nav">
-              <a href="#About" class="button-nav">Colours</a>
-            </div>
-
+              <a href="#Navigation" class="button-nav">Navigation</a>
+            </div> 
 
             <div class = "button-item-nav">
-              <a href="#Contact" class="button-nav">Navigation</a>
+              <a href="#Form" class="button-nav">Input/Forms</a>
             </div>
-
-             <div class = "button-item-nav">
-              <a href="#Contact" class="button-nav">Input/Forms</a>
-            </div>
-
         </nav>
       </div> <!-- end of navBox -->
 
 
-          <h2>Buttons:</h2>
+          <h2 id="Buttons">Buttons</h2>
+           <h3>CSS selector:</h3>
+          <p>.submit-nav, .button</p>
 
-          <h3>Default Buttons</h3>
+          <p><strong>Default Buttons</strong></p>
             <div class="submit-nav">
               <a class="button" href="#">Default Button</a>
             </div>
+          <h3>Sample code:</h3>
+            <code><br> &lt;div class="submit-nav"&gt<br>&lt;a href="#" class="button"&gt;
+              &lt;/a&gt;</code>
 
           <h3>Default Dropdown</h3>
             <select>
@@ -121,7 +119,7 @@
 
             <hr>
 
-            <h2>Type:</h2>
+            <h2 id="Fonts">Type:</h2>
 
             <div class="type">
               <h1>This is the font for h1</h1>
@@ -135,7 +133,7 @@
 
             <hr>
 
-            <h2>Colour:</h2>
+            <h2 id="Colours">Colour:</h2>
               <div class="square">
               <div id="squareblack">
                 <p>#000000</p>
@@ -168,9 +166,9 @@
 
             <hr>
 
-            <h2>Navigation:</h2>
+            <h2 id="Navigation">Navigation:</h2>
 
-              <div class="navBox">
+              <div class="navBox2">
                 <div class="topbox1">
 
 
@@ -190,13 +188,12 @@
                 </div>
               </div> <!-- end of navBox -->
 
+            <hr>
 
-
-
-      </div> <!-- background -->
-
-
-
+            <h2 id="Form">Contact Form</h2>
+            <input type="text" id="form-name" placeholder="Full Name"></a>
+            <input type="text" id="form-subject" placeholder="Subject"></a>
+            <textarea id="form-comment" placeholder="Message"></a>
 
 
 

@@ -9,6 +9,7 @@
   box-sizing: border-box;
 }
 
+
 /*FONTS*/
 h3{
   font-size: 1em;
@@ -73,6 +74,15 @@ hr {
   height:1500px;
   border-bottom: 1px;
 }
+
+.navBox2 {
+  width: 210px;
+  float: left;
+  display: inline-block;
+  height:2000px;
+  border-bottom: 1px;
+}
+
 
 nav {
   position:fixed;
@@ -359,6 +369,7 @@ a {
   border-style:solid;
   border-width:2px;
   border-color:#FFFFFF;
+  display: inline-block;
 }
 
 .button2-item-nav {
@@ -383,6 +394,45 @@ a {
 .button2-item-nav  :hover {
   background-color:#E5E1E5;
 }
+
+
+/*This is the styling for contact form*/
+#form-name{
+  border-bottom: solid 1px #DDAC72;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  background-color: #000000;
+  color: #DDAC72;
+  padding: 0.7em;
+  text-align: center;
+}
+
+
+#form-subject{
+  border-bottom: solid 1px #DDAC72;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  background-color: #000000;
+  color: #DDAC72;
+  padding: 0.7em;
+  text-align: center;
+}
+
+
+#form-comment{
+  border-bottom: solid 1px #DDAC72;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  background-color: #000000;
+  color: #DDAC72;
+  text-align: center;
+  overflow:hidden;
+  display: block;
+}
+
 
 
 
