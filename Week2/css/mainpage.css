@@ -156,22 +156,53 @@ nav {
 
 .picture-test {
 	background: url(http://placehold.it/700x500);
-	background-size: 100% 100%;
-	width:200px;
-	height:200px;
+	background-size: 100%, 100%;
+	width:700px;
+	height:500px;
 }
 
 
 
 .text-box {
+	border-style:solid;
+	border-width:1px;
 	display:flex;
 	margin-left:15em;
 }
 
-.res-box {
-	margin-left:15em;
+.submit-nav {
+  margin-top:2em;
+  margin-left:1.5em;
+  display: block;
+  padding: 0.3em 1.5em;
+  font-family: 'Open Sans', serif;
+  font-size:12px;
+  border-radius: 0.5em;
+  font-weight:bolder;
+  text-align:center;
+  text-transform: uppercase;
+  display: inline-block;
+  border-style: solid;
+  border-width:2px;
+  border-color:#000000;
+  width:60%;
+  transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
 }
 
+.submit-nav:hover, .submit-nav:focus {
+  background-color:  #E5E1E5;
+  border-color:  #E5E1E5;
+}
+
+.submit-nav a:hover {
+  color: #000000;
+  transition: color 0.5s ease-out
+}
+
+.submit-nav a {
+    text-decoration:none;
+    color: #000000;
+}
 
 
 /*GRID TEST */
@@ -278,21 +309,23 @@ nav {
 	border-width:1px;
 	display: block;
 	width:50%;
-	min-height:20em;
 	position:relative;
+	min-height:30em;
+	flex-grow:1;
 }
 
 .col-3of4{
 	border-style:solid;
 	border-width:1px;
 	display: block;
-	width:90%;
-	min-height:20em;
+	width:65%;
 	position:relative;
+	flex-shrink:1;
+
 }
 
 .col-mof4{
-	background: url(http://placehold.it/500x500);
+	background: url(http://placehold.it/300x500);
 	border-style:solid;
 	border-width:1px;
 	display: block;
@@ -302,7 +335,7 @@ nav {
 }
 
 .col-mof4:hover {
-	width:60em;
+	width:60%;
 }
 
 .col-4of4 {
@@ -316,7 +349,12 @@ nav {
 
 @media(max-width: 50em) {
 
-	.col-1of4, .col-1of4t, .col-1of4b, .col-1of4s, .col-1of4sl, .col-2of4 {
+	.text-box {
+	flex-wrap:wrap;
+	width:100%;
+}
+
+	.col-1of4, .col-1of4t, .col-1of4b, .col-1of4s, .col-1of4sl, .col-2of4, .col-mof4 {
 	width:100%;
 	min-height:15em;
 	top:0;
