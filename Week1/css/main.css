@@ -11,11 +11,12 @@
 
 
 /*FONTS*/
+
 h3{
   font-size: 1em;
   font-family: 'Open Sans', serif;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #DDAC72;
 }
 
 h2{
@@ -39,12 +40,15 @@ h1{
 }
 
 p{
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: 'Open Sans', serif;
   color: #FFFFFF;
   text-decoration: none;
 }
 
+strong{
+  color: #061445;
+}
 
 
 /*BACKGROUND*/
@@ -67,6 +71,7 @@ hr {
 
 code {
   background-color:#FFFFFF;
+  padding:0.27em;
 }
 
 .shift-right {  /*SHIFTS CONTENT REIGHT ABIT FOR BETTER LAYOUT AND READING*/
@@ -79,7 +84,7 @@ code {
   width: 210px;
   float: left;
   display: block;
-  height:150em;
+  height:170em;
   border-bottom: 1px;
 }
 
@@ -90,7 +95,7 @@ nav {
   left:0;
   width:200px;
   height:100%;
-  background-color:#FFFFFF;
+  background-color: rgba(142, 51, 33, 0.19);
   opacity: 0.9;
 
 }
@@ -118,7 +123,7 @@ nav {
 }
 
 .submit-nav:hover, .submit-nav:focus {
-  background-color:  #E5E1E5;
+  background-color:  #8E3321;
   border-color:  #E5E1E5;
 }
 
@@ -417,6 +422,8 @@ a {
   color: #DDAC72;
   padding: 0.7em;
   text-align: center;
+  display:block;
+  width:28.45em;
 }
 
 
@@ -429,6 +436,8 @@ a {
   color: #DDAC72;
   padding: 0.7em;
   text-align: center;
+  display:block;
+  width:28.45em;
 }
 
 
