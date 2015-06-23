@@ -1,0 +1,105 @@
+header{
+  height: 6em;
+  width: 100%;
+  display: block;
+}
+
+
+body{
+	font-family: 'Hind', Helvetica, sans-serif;
+	text-align: left;
+
+}
+
+a{
+	color: black;
+	text-decoration:none;
+}
+
+
+h1{
+	position: fixed;
+	top: 5em;
+	left:15em;
+	width: 35%;
+}
+
+.content{
+	position: fixed;
+	top: 10em;
+	left: 15em;
+	width:35%;
+	color:#ffffff;
+}
+
+.suggestions-restaurant-1{
+	background-color:#061445;
+	width:100%;
+	height: 200px;
+	position:fixed;
+	top:10em;
+	left:12.5em;
+}
+
+.suggestions-restaurant-2{
+	background-color:#061445;
+	width:100%;
+	height: 200px;
+	position:fixed;
+	top:10em;
+	left:12.5em;
+}
+
+
+.suggestions-restaurant-3{
+	background-color:#061445;
+	width:100%;
+	height: 200px;
+	position:fixed;
+	top:10em;
+	left:12.5em;
+}
+
+
+
+nav {
+  position: fixed;
+  top: 6em;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(142, 51, 33, 0.19);
+  opacity: 0.9;
+}
+
+.sidebar{
+	line-height:2em;
+}
+
+
+.button{
+	text-decoration: none;
+	color: black;
+	padding: 1em;
+ 	line-height: 7em;
+	border: 0.1em solid #000000;
+}
+
+.button:hover{
+	background-color:#8E3321;
+	color:#ffffff;
+}
+
+
+ul li{
+	list-style:none;
+}
+
+footer{
+	position:fixed;
+	bottom: 1em;
+}
+
+footer a{
+	line-spacing:3em;
+}
