@@ -139,10 +139,30 @@ nav {
 
 
 /* CONTROLS DEFAULT DROP DOWN*/
+/*FORM*/
+input {
+  display:inline-block;
+  width:60%;
+}
+
+
+#form-name{
+  border-bottom: solid 1px #000000;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  background-color: #FFFFFF;
+  color: #DDAC72;
+  padding: 0.7em;
+  text-align: center;
+}
+
+
+
 select{
   background-color:transparent;
   color:#FFFFFF;
-
+  width:60%;
 
   font-family: 'Open Sans', serif;
   text-transform: uppercase;
@@ -156,8 +176,9 @@ select{
 
 select:-ms-expand {
   background-color: transparent;
-  color:#00000F;
+  color:#000000;
 }
+
 
 
 
@@ -187,32 +208,6 @@ select:-ms-expand {
   background-color:#E5E1E5;
 }
 
-
-.box {
-  display: flex;
-  margin-right:5%;
-  /*margin-left:10%;*/
-  margin-top:1%;
-  margin-bottom:2%;
-}
-
-.box-item-nav {
-  border-style:solid;
-  border-width:1px;
-  border-color: #FFFFFF;
-  flex-grow: 1;    
-  flex-basis: 20em;
-  margin-right:1em;
-  background-color: transparent;
-  background-opacity: 0.4;
-  transition: all 0.3s ease 0s;
-
-}
-
-.box-item-nav:hover {
-  background-color: #000000;
-  opacity:0.9;
-}
 
 .picture img {
   width:100%;
@@ -484,6 +479,83 @@ a {
   left:210px;
 }
 
+
+
+
+/*New Boxes */
+
+.taste-buttons {
+  display:flex;
+  position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.taste-item-nav {
+  flex-grow:1;
+  text-align:center;
+  font-family: 'Open Sans', serif;
+    text-transform: uppercase;
+  font-weight:bolder;
+    font-size:0.8em;
+    padding: 1em 1em;
+
+
+    border-style:solid;
+    border-width:1px;
+}
+
+.taste-item-nav a {
+  border-style:solid;
+  border-width: 1px;
+}
+.box {
+  display: flex;
+  position:relative;
+  border-style:solid;
+  border-width:1px;
+  transition: all 0.3s ease 0s;
+}
+.box-item-nav-1 {
+  border-style:solid;
+  border-width: 1px;
+  min-width: auto;
+  flex-grow:1;
+  transition: all 0.5s ease 0s;
+}
+
+.box-item-nav-1:hover, .box-item-nav-2:hover {
+  min-width:60%;
+  background-color: #000000;
+}
+
+.box-item-nav-2 {
+  border-style:solid;
+  border-width: 1px;
+  min-width: auto;
+  flex-grow:1;
+  transition: all 0.5s ease 0s;
+}
+.picture-test {
+  background: url(http://placehold.it/550x200);
+  background-size: 100% 100%;
+  text-align:center;
+  width:550px;
+  height:200px;
+}
+
+[class^='col-'] { /*only select things that begin with col- */
+  float:left;
+  padding:0;
+}
+.col-4of4 {
+  border-style:solid;
+  border-width:1px;
+  display: block;
+  width:100%;
+  min-height:20em;
+  position:relative;
+}
 
 
 

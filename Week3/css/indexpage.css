@@ -146,11 +146,11 @@ nav {
 }
 
 .picture-test {
-	background: url(http://placehold.it/300x200);
+	background: url(http://placehold.it/325x200);
 	background-size: 100% 100%;
 	text-align:center;
-	width:400px;
-	height:300px;
+	width:325px;
+	height:200px;
 }
 
 

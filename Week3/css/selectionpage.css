@@ -19,8 +19,17 @@ h2 {
   font-size: 1.5em;
   margin:0;
   padding-left:0.5em;
-  font-family: 'Open Sans', serif;
+  font-family: 'Montserrat', serif;
   text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1em;
+  margin:0;
+  padding-left:1em;
+  font-family: 'Hind', serif;
   color: #000000;
   text-decoration: none;
 }
@@ -32,8 +41,6 @@ h2 {
   float: left;
   display: block;
   height:100%;
-  border-width: 1px;
-  border-style:solid;
   transition: all 0.3s ease 0s;
 }
 
@@ -60,6 +67,7 @@ nav {
 
 .button-item-nav {
   display:flex; /* for some reason display:flex must be on both topbox and buttonnav :/ */
+  transition: all 0.3s ease 0s;
 }
 
 .button-item-nav a {
@@ -77,7 +85,7 @@ nav {
   padding: 1em 2.5em;
 }
 
-.button-item-nav  :hover {
+.button-item-nav:hover {
   background-color:#E5E1E5;
 }
 
@@ -91,21 +99,37 @@ nav {
 
 .taste-item-nav {
 	flex-grow:1;
-	text-align:center;
 	font-family: 'Open Sans', serif;
   	text-transform: uppercase;
  	font-weight:bolder;
   	font-size:0.8em;
+  	text-align:center;
   	padding: 1em 1em;
-
-
-  	border-style:solid;
-  	border-width:1px;
+  	background-color: #000000;
+  	opacity: 0.6;
+/*
+	border-style:solid;
+  	border-width:2px;
+  	border-color: #FFFFFF;*/
+  	 transition: all 0.3s ease 0s;
+  	 clear:both;
 }
 
+.taste-item-nav:hover {
+	opacity: 0.8;
+}
+
+
 .taste-item-nav a {
-	border-style:solid;
-	border-width: 1px;
+
+/*	border-style:solid;
+  	border-width:1px;*/
+	padding-left:30%;
+	padding-right:30%;
+	padding-top:1em;
+	padding-bottom:1em;
+	color:#FFFFFF;
+	transition: all 0.3s ease 0s;
 }
 
 
@@ -114,43 +138,128 @@ nav {
 	display: flex;
 	margin-left: 15em;
 	position:relative;
-	border-style:solid;
+/*	border-style:solid;
 	border-width:1px;
+	border-color:#FFFFFF;*/
 	transition: all 0.3s ease 0s;
 }
 
 .box-item-nav-1 {
-	border-style:solid;
-	border-width: 1px;
-	min-width: auto;
+	position:relative;
+/*	border-style:solid;
+	border-width:2px 1px;
+	border-color:#FFFFFF;*/
 	flex-grow:1;
 	transition: all 0.5s ease 0s;
 }
 
-.box-item-nav-1:hover, .box-item-nav-2:hover {
-	min-width:60%;
+.box-item-nav-1:hover {
+	min-width:53%;
 	background-color: #000000;
 }
 
 .box-item-nav-2 {
-	border-style:solid;
-	border-width: 1px;
-	min-width: auto;
+	position:relative;
+/*	border-style:solid;
+	border-width: 2px;
+	border-color:#FFFFFF;*/
 	flex-grow:1;
-	transition: all 0.5s ease 0s;
+	transition: all 0.5s;
 }
 
-.picture img{
-	min-width:100% ;
-	max-width:100%;
+.box-item-nav-2:hover {
+	min-width:40%;
+	background-color:#000000;
+}
+
+.picture  {
+	/*background: url(http://placehold.it/500x200);*/
+	background: url('../image/metro.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:100%;
+	height:350px;
+	position:relative;
+}
+
+.picture h2 {
+	position:absolute;
+	top: 3em;
+	color:#FFFFFF;
 }
 
 .picture-test {
-	background: url(http://placehold.it/300x200);
-	background-size: 100% 100%;
-	text-align:center;
-	width:300px;
+	background: url(http://placehold.it/500x200);
+	/*background: url(image/metro.jpg);*/
+	background-size: cover;
+	width:100%;
 	height:200px;
+} 
+
+.pepperlunch {
+	background: url('../image/pepperlunch.jpg');
+	background-size: cover;
+	width:100%;
+	height:200px;
+}
+
+.random {
+	background: url('../image/random.jpg');
+	background-size: cover;
+	width:100%;
+	height:200px;
+}
+
+.gyo {
+	background: url('../image/gyo.png');
+	background-size: cover;
+	width:100%;
+	height:200px;
+}
+
+.medina {
+	background: url('../image/medina.jpg');
+	background-size: cover;
+	width:100%;
+	height:200px;
+}
+
+.dinesty {
+	background: url('../image/dinesty.jpg');
+	background-size: cover;
+	width:100%;
+	height:200px;
+}
+
+.hubrestaurant {
+	background: url('../image/hubrestaurant.jpg');
+	background-size: cover;
+	width:100%;
+	height:200px;
+}
+
+.meatbread {
+	background: url('../image/meatbread.jpg');
+	background-size: cover;
+	width:100%;
+	height:200px;
+}
+
+.text {
+	position:absolute;
+	bottom:1em;
+	left:1em;
+}
+
+.text h2 {
+	font-weight:lighter;
+	color:#FFFFFF;
+}
+
+
+.cover {
+	background: url(http://placehold.it/600x300);
+	background-size: 100% 100%;
 }
 
 
@@ -171,8 +280,8 @@ nav {
 .col-1of4 {
 	background: url(http://placehold.it/700x500);
 	background-size: 100% 100%;
-	border-style:solid;
-	border-width:1px;
+/*	border-style:solid;
+	border-width:1px;*/
 	display: block;
 	width:25%;
 	min-height:15em;
@@ -255,9 +364,7 @@ nav {
 }
 
 .col-4of4 {
-	border-style:solid;
-	border-width:1px;
-	display: block;
+	/*display: block;*/
 	width:100%;
 	min-height:20em;
 	position:relative;
@@ -265,27 +372,9 @@ nav {
 
 @media(max-width: 50em) {
 
-	.col-1of4, .col-1of4t, .col-1of4b, .col-1of4s, .col-1of4sl, .col-2of4 {
-	width:50%;
-	min-height:15em;
-	top:0;
-	left:0;
-	margin:0;
-	}
-
-}
-
-
-@media(max-width: 35em) {
-
-	.taste-item-nav {
-		flex-wrap: wrap;
-	}
-
-
 	.navBox {
 	  width: 100%;
-	  height:25em;
+	  height:auto;
 	  float: left;
 	  display: block;
 	  border-width: 1px;
@@ -301,7 +390,14 @@ nav {
 	  opacity: 0.9;
 	}
 
+	.col-4of4 {
+		width:100%;
+	}
 
+	.box-item-nav-1:hover {
+		min-width:50%;
+		background-color: #000000;
+	}
 
 	.box {
 		flex-wrap: wrap;
@@ -311,6 +407,38 @@ nav {
 	.grid {
 		margin:0;
 	}
+
+	.taste-buttons {
+		flex-wrap: wrap;
+	}
+
+	.box {
+		flex-wrap: wrap;
+		margin:0;
+	}
+
+
+	.col-1of4, .col-1of4t, .col-1of4b, .col-1of4s, .col-1of4sl, .col-2of4 {
+	width:50%;
+	min-height:15em;
+	top:0;
+	left:0;
+	margin:0;
+	}
+
+	.picture-test, .pepperlunch, .gyo, .random, .dinesty, .medina, .hubrestaurant, .meatbread {
+		width:550px;
+	}
+
+}
+
+
+@media(max-width: 35em) {
+
+
+
+
+
 
 	.col-1of4, .col-1of4t, .col-1of4b, .col-1of4s, .col-1of4sl, .col-2of4 {
 	width:100%;

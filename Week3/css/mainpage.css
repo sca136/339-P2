@@ -155,9 +155,9 @@ nav {
 }
 
 .picture-test {
-	background: url(http://placehold.it/700x500);
+	background: url(http://placehold.it/500x500);
 	background-size: 100%, 100%;
-	width:700px;
+	width:550px;
 	height:500px;
 }
 
