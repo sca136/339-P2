@@ -1,0 +1,569 @@
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*Presets*/
+
+body {
+	margin:0;
+}
+
+a {
+	text-decoration:none;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin:0;
+  padding-left:0.5em;
+  font-family: 'Montserrat', serif;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+h3 {
+	font-size: 1em;
+	margin:0;
+ 	font-family: 'Montserrat', serif;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+}
+
+p {
+  font-size: 1em;
+  margin:0;
+  padding-left:1em;
+  font-family: 'Hind', serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/*Right Nav Bar*/
+.navBox {
+  width: 15em;
+  float: left;
+  display: block;
+  height:100%;
+  transition: all 0.3s ease 0s;
+}
+
+.topbox {
+	padding-top: 2em;
+	/*background: url(http://placehold.it/200x100);
+	background-repeat: no-repeat;*/
+}
+
+.logo {
+	text-align: center;
+	margin-bottom:1em;
+}
+
+nav {
+  position:fixed;
+  top:0;
+  left:0;
+  width:15em;
+  background-color:#FFFFFF;
+  opacity: 0.9;
+  transition: all 0.3s ease 0s;
+}
+
+.button-item-nav {
+  display:flex; /* for some reason display:flex must be on both topbox and buttonnav :/ */
+  transition: all 0.3s ease 0s;
+}
+
+.button-item-nav a {
+  font-family: 'Open Sans', serif;
+  text-transform: uppercase;
+  font-weight:bolder;
+  font-size:0.8em;
+
+  color: #000000;
+  flex-grow: 1;  
+  flex-basis: 0.4em;
+  transition: all 0.3s ease 0s;
+
+  text-align: center;
+  padding: 1em 2.5em;
+}
+
+.button-item-nav:hover {
+  background-color:#E5E1E5;
+}
+
+/* Taste Buttons */
+.taste-buttons {
+	display:flex;
+	position:absolute;
+  	bottom:0;
+  	width:100%;
+}
+
+.taste-item-nav {
+	flex-grow:1;
+	font-family: 'Open Sans', serif;
+  	text-transform: uppercase;
+ 	font-weight:bolder;
+  	font-size:0.8em;
+  	text-align:center;
+  	padding: 1em 1em;
+  	background-color: #000000;
+  	opacity: 0.6;
+
+  	 transition: all 0.3s ease 0s;
+}
+
+.taste-item-nav:hover {
+	opacity: 0.8;
+}
+
+
+.taste-item-nav a {
+
+/*	border-style:solid;
+  	border-width:1px;*/
+	padding-left:30%;
+	padding-right:30%;
+	padding-top:1em;
+	padding-bottom:1em;
+	color:#FFFFFF;
+	transition: all 0.3s ease 0s;
+}
+
+
+/*Selection Boxes*/
+.box {
+	display: flex;
+	margin-left: 15em;
+	position:relative;
+	border-style:solid;
+	border-width:1px;
+	transition: all 0.3s ease 0s;
+}
+
+.box-item-nav-1 {
+	position:relative;
+/*	border-style:solid;
+	border-width:2px 1px;
+	border-color:#FFFFFF;*/
+	flex-grow:1;
+	transition: all 0.5s ease 0s;
+}
+
+.box-item-nav-1:hover {
+	min-width:53%;
+	background-color: #000000;
+}
+
+.box-item-nav-2 {
+	position:relative;
+/*	border-style:solid;
+	border-width: 2px;
+	border-color:#FFFFFF;*/
+	flex-grow:1;
+	transition: all 0.5s;
+}
+
+.box-item-nav-2:hover {
+	min-width:40%;
+	background-color:#000000;
+}
+
+.picture  {
+	/*background: url(http://placehold.it/500x200);*/
+	background: url('../image/metro.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:100%;
+	height:22em;
+	position:relative;
+}
+
+.medinacover {
+	background: url('../image/medinacover.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:100%;
+	height:22em;
+	position:relative;
+}
+
+.picture h2 {
+	position:absolute;
+	top: 3em;
+	color:#FFFFFF;
+}
+
+.picture-test {
+	background: url('../image/pepperlunch.jpg');
+	/*background: url(image/metro.jpg);*/
+	background-size: cover;
+	width:100%;
+	height:12.5em;
+} 
+
+.pepperlunch {
+	background: url('../image/pepperlunch.jpg');
+	background-size: cover;
+	width:100%;
+	height:12.5em;
+}
+
+.random {
+	background: url('../image/random.jpg');
+	background-size: cover;
+	width:100%;
+	height:12.5em;
+}
+
+.gyo {
+	background: url('../image/gyo.png');
+	background-size: cover;
+	width:100%;
+	height:12.5em;
+}
+
+.medina {
+	background: url('../image/medina.jpg');
+	background-size: cover;
+	width:100%;
+	height:12.5em;
+}
+
+.dinesty {
+	background: url('../image/dinesty.jpg');
+	background-size: cover;
+	width:100%;
+	height:12.5em;
+}
+
+.hubrestaurant {
+	background: url('../image/hubrestaurant.jpg');
+	background-size: cover;
+	width:100%;
+	height:12.5em;
+}
+
+.meatbread {
+	background: url('../image/meatbread.jpg');
+	background-size: cover;
+	width:100%;
+	height:12.5em;
+}
+
+.text {
+	position:absolute;
+	bottom:1em;
+	left:1em;
+}
+
+.text h2 {
+	font-weight:lighter;
+	color:#FFFFFF;
+}
+
+
+/*FORM*/
+.form {
+	display:inline-block;
+}
+
+.text-box {
+	display:flex;
+	margin-left:15em;
+	
+}
+
+.description {
+	margin:1em;
+	flex-grow:2;
+}
+
+.descriptionpictures {
+	flex-wrap:wrap;
+}
+
+.wrap {
+/*	border-style:solid;
+	border-width:1px;*/
+	display:flex;
+}
+
+
+.res-box {
+	margin-left:15em;
+}
+
+/*FORM*/
+input {
+	display:inline-block;
+	width:60%;
+}
+
+
+#form-name{
+  border-bottom: solid 1px #000000;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  background-color: #FFFFFF;
+  color: #DDAC72;
+  padding: 0.7em;
+  text-align: center;
+}
+
+
+select{
+  background-color:transparent;
+  color:#000000;
+  width:60%;
+
+  font-family: 'Open Sans', serif;
+  text-transform: uppercase;
+  font-weight:bolder;
+
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 1em;
+  border-color: #000000;
+}
+
+select:-ms-expand {
+  background-color: transparent;
+  color:#000000;
+}
+
+.text-box h3 {
+	margin-top:1em;
+}
+
+.submit-nav {
+  margin-top:2em;
+  display: block;
+  padding: 0.3em 1.5em;
+  font-family: 'Open Sans', serif;
+  font-size:12px;
+  border-radius: 0.5em;
+  font-weight:bolder;
+  text-transform: uppercase;
+  display: inline-block;
+  border-style: solid;
+  border-width:2px;
+  border-color:#000000;
+  width:60%;
+  transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
+}
+
+.submit-nav:hover, .submit-nav:focus {
+  background-color:  #E5E1E5;
+  border-color:  #E5E1E5;
+}
+
+.submit-nav a:hover {
+  color: #000000;
+  transition: color 0.5s ease-out
+}
+
+.submit-nav a {
+    text-decoration:none;
+    color: #000000;
+}
+
+.menu {
+	position:relative;
+}
+
+.menu:hover>.col-mof4 {
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0s;
+}
+
+
+
+
+
+[class^='col-'] { /*only select things that begin with col- */
+  float:left;
+  padding:0;
+}
+
+
+/*GRID TEST */
+
+.grid {
+	display:block;
+	position:relative;
+	margin-left:15em;
+}
+
+[class^='col-'] { /*only select things that begin with col- */
+  float:left;
+  padding:0;
+  text-align: center;
+}
+
+.col-1of4 {
+	background: url(http://placehold.it/700x500);
+	background-size: 100% 100%;
+	border-style:solid;
+	border-width:1px;
+	display: block;
+	width:25%;
+	min-height:15em;
+}
+
+
+.col-2of4 {
+/*	border-style:solid;
+	border-width:1px;*/
+	display: block;
+	width:50%;
+	min-height:10em;
+	position:relative;
+	flex-grow: 2;
+}
+
+
+.col-3of4{
+/*	border-style:solid;
+	border-width:1px;*/
+	display: block;
+	width:75%;
+	min-height:20em;
+	position:relative;
+	flex-shrink: 2;
+}
+
+.col-mof4{
+	background: url(http://placehold.it/500x500);
+/*	border-style:solid;
+	border-width:1px;*/
+	display: block;
+	width:200%;
+	height:25em;
+	position:absolute;
+	bottom:0;
+	z-index:3;
+	transition: all 0.3s ease 0s;
+}
+
+.hide {
+	visibility: hidden;
+	opacity: 0;
+}
+
+/*.col-mof4:hover{
+	width:60em;
+}*/
+
+
+.col-4of4 {
+	/*display: block;*/
+	width:100%;
+	min-height:20em;
+	position:relative;
+}
+
+@media(max-width: 50em) {
+
+	.navBox {
+	  width: 100%;
+	  height:auto;
+	  float: left;
+	  display: block;
+	  border-width: 1px;
+	  border-style:solid;
+	}
+
+	nav {
+	  position:relative;
+	  top:0;
+	  left:0;
+	  width: 100%;
+	  background-color:#FFFFFF;
+	  opacity: 0.9;
+	}
+
+	.col-4of4 {
+		width:100%;
+	}
+
+	.box-item-nav-1:hover {
+		min-width:50%;
+		background-color: #000000;
+	}
+
+	.box {
+		flex-wrap: wrap;
+		margin:0;
+	}
+
+	.taste-buttons {
+		flex-wrap: wrap;
+	}
+
+	.text-box {
+		flex-wrap:wrap;
+		width:100%;
+		margin-left:0;
+	}
+
+	.col-1of4, .col-2of4, .col-3of4, .col-mof4 {
+		width:100%;
+		min-height:15em;
+		top:0;
+		left:0;
+		margin:0;
+	}
+
+	/*.picture-test, .pepperlunch, .gyo, .random, .dinesty, .medina, .hubrestaurant, .meatbread {
+		width:550px;
+	}*/
+
+}
+
+@media(max-width: 35em) {
+
+
+	.taste-item-nav {
+		flex-wrap: wrap;
+	}
+
+
+	.navBox {
+	  width: 100%;
+	  height:25em;
+	  float: left;
+	  display: block;
+	  border-width: 1px;
+	  border-style:solid;
+	}
+
+	nav {
+	  position:relative;
+	  top:0;
+	  left:0;
+	  width: 100%;
+	  background-color:#FFFFFF;
+	  opacity: 0.9;
+	}
+
+
+	.box {
+		flex-wrap: wrap;
+		margin:0;
+	}
+
+	.grid {
+		margin:0;
+	}
+
+}
