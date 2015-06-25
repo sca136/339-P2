@@ -138,9 +138,8 @@ nav {
 	display: flex;
 	margin-left: 15em;
 	position:relative;
-/*	border-style:solid;
+	border-style:solid;
 	border-width:1px;
-	border-color:#FFFFFF;*/
 	transition: all 0.3s ease 0s;
 }
 
@@ -264,104 +263,11 @@ nav {
 
 
 
-/*GRID TEST */
-
-.grid {
-	display:block;
-	position:relative;
-	margin-left:15em;
-}
-
 [class^='col-'] { /*only select things that begin with col- */
   float:left;
   padding:0;
 }
 
-.col-1of4 {
-	background: url(http://placehold.it/700x500);
-	background-size: 100% 100%;
-/*	border-style:solid;
-	border-width:1px;*/
-	display: block;
-	width:25%;
-	min-height:15em;
-}
-
-.col-1of4t {
-	background: url(http://placehold.it/700x500);
-	background-size: 100% 100%;
-	border-style:solid;
-	border-width:1px;
-	display: block;
-	width:25%;
-	min-height:20em;
-	position:relative;
-}
-
-.col-1of4tm {
-	background: url(http://placehold.it/700x500);
-	background-size: 100% 100%;
-	border-style:solid;
-	border-width:1px;
-	display: block;
-	width:25%;
-	min-height:20em;
-	position:relative;
-	transition: all 0.3s ease 0s;
-}
-
-.col-1of4tm:hover {
-	width:100%;
-}
-
-.col-1of4s {
-	background: url(http://placehold.it/700x500);
-	background-size: 100% 100%;
-	border-style:solid;
-	border-width:1px;
-	display: block;
-	width:25%;
-	min-height:15em;
-	margin-top:5em;
-	position:relative;
-	left:-25%;
-}
-
-.col-1of4b {
-	background: url(http://placehold.it/700x500);
-	background-size: 100% 100%;
-	border-style:solid;
-	border-width:1px;
-	display: block;
-	width:25%;
-	min-height:20em;
-	position:relative;
-	left:75%;
-	bottom:20em;
-}
-
-.col-1of4sl {
-	background: url(http://placehold.it/700x500);
-	background-size: 100% 100%;
-	border-style:solid;
-	border-width:1px;
-	display: block;
-	width:25%;
-	min-height:20em;
-	position:relative;
-	right:25%;
-}
-
-
-.col-2of4 {
-	border-style:solid;
-	border-width:1px;
-	display: block;
-	width:50%;
-	min-height:20em;
-	position:relative;
-	left:-25%;
-}
 
 .col-4of4 {
 	/*display: block;*/
@@ -404,48 +310,12 @@ nav {
 		margin:0;
 	}
 
-	.grid {
-		margin:0;
-	}
-
 	.taste-buttons {
 		flex-wrap: wrap;
 	}
 
-	.box {
-		flex-wrap: wrap;
-		margin:0;
-	}
-
-
-	.col-1of4, .col-1of4t, .col-1of4b, .col-1of4s, .col-1of4sl, .col-2of4 {
-	width:50%;
-	min-height:15em;
-	top:0;
-	left:0;
-	margin:0;
-	}
-
-	.picture-test, .pepperlunch, .gyo, .random, .dinesty, .medina, .hubrestaurant, .meatbread {
+	/*.picture-test, .pepperlunch, .gyo, .random, .dinesty, .medina, .hubrestaurant, .meatbread {
 		width:550px;
-	}
-
-}
-
-
-@media(max-width: 35em) {
-
-
-
-
-
-
-	.col-1of4, .col-1of4t, .col-1of4b, .col-1of4s, .col-1of4sl, .col-2of4 {
-	width:100%;
-	min-height:15em;
-	top:0;
-	left:0;
-	margin:0;
-	}
+	}*/
 
 }
