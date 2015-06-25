@@ -19,17 +19,8 @@ h2 {
   font-size: 1.5em;
   margin:0;
   padding-left:0.5em;
-  font-family: 'Montserrat', serif;
+  font-family: 'Open Sans', serif;
   text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
-}
-
-p {
-  font-size: 1em;
-  margin:0;
-  padding-left:1em;
-  font-family: 'Hind', serif;
   color: #000000;
   text-decoration: none;
 }
@@ -40,17 +31,14 @@ p {
   width: 15em;
   float: left;
   display: block;
-  height:95em;
+  height:100%;
   border-width: 1px;
   border-style:solid;
-
+  transition: all 0.3s ease 0s;
 }
 
 .topbox {
 	padding-top: 2em;
-	padding-left:em;
-	border-style:solid;
-	border-width:1px;
 	/*background: url(http://placehold.it/200x100);
 	background-repeat: no-repeat;*/
 }
@@ -67,7 +55,7 @@ nav {
   width:15em;
   background-color:#FFFFFF;
   opacity: 0.9;
-
+  transition: all 0.3s ease 0s;
 }
 
 .button-item-nav {
@@ -93,11 +81,38 @@ nav {
   background-color:#E5E1E5;
 }
 
+/* Taste Buttons */
+.taste-buttons {
+	display:flex;
+	position:absolute;
+  	bottom:0;
+  	width:100%;
+}
+
+.taste-item-nav {
+	flex-grow:1;
+	text-align:center;
+	font-family: 'Open Sans', serif;
+  	text-transform: uppercase;
+ 	font-weight:bolder;
+  	font-size:0.8em;
+  	padding: 1em 1em;
+
+
+  	border-style:solid;
+  	border-width:1px;
+}
+
+.taste-item-nav a {
+	border-style:solid;
+	border-width: 1px;
+}
 
 
 /*Selection Boxes*/
 .box {
 	display: flex;
+	margin-left: 15em;
 	position:relative;
 	border-style:solid;
 	border-width:1px;
@@ -113,7 +128,7 @@ nav {
 }
 
 .box-item-nav-1:hover, .box-item-nav-2:hover {
-	min-width:90%;
+	min-width:60%;
 	background-color: #000000;
 }
 
@@ -131,9 +146,10 @@ nav {
 }
 
 .picture-test {
-	background: url(http://placehold.it/700x500);
+	background: url(http://placehold.it/325x200);
 	background-size: 100% 100%;
-	width:200px;
+	text-align:center;
+	width:325px;
 	height:200px;
 }
 
@@ -238,6 +254,15 @@ nav {
 	left:-25%;
 }
 
+.col-4of4 {
+	border-style:solid;
+	border-width:1px;
+	display: block;
+	width:100%;
+	min-height:20em;
+	position:relative;
+}
+
 @media(max-width: 50em) {
 
 	.col-1of4, .col-1of4t, .col-1of4b, .col-1of4s, .col-1of4sl, .col-2of4 {
@@ -252,6 +277,10 @@ nav {
 
 
 @media(max-width: 35em) {
+
+	.taste-item-nav {
+		flex-wrap: wrap;
+	}
 
 
 	.navBox {
@@ -276,6 +305,7 @@ nav {
 
 	.box {
 		flex-wrap: wrap;
+		margin:0;
 	}
 
 	.grid {
@@ -291,5 +321,3 @@ nav {
 	}
 
 }
-
-
