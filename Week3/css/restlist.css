@@ -52,12 +52,24 @@ p {
   font-family: 'Hind', serif;
   color: #000000;
   text-decoration: none;
+
+  /*might cause text weirdness on site*/
+  line-height: 1em;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+hr{
+  width: 65%;
+  margin-left: 1em;
+  color: #000000;	
 }
 
 iframe {
-	z-index:-1;
-	height:22em;
-	width:100%;
+  z-index: -1;
+  height: 143%;
+  width: 100%;
+  margin-top: -150px;
 }
 
 /*Right Nav Bar*/
@@ -102,6 +114,18 @@ nav {
   -webkit-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  margin-left: 2em;
+  width: 50%;
+}
+
+
+.button-item-nav p{
+  font-size: 1em;
+  margin:0;
+  padding-left:1em;
+  font-family: 'Hind', serif;
+  color: #000000;
+  text-decoration: none;
 }
 
 .button-item-nav a {
@@ -123,8 +147,8 @@ nav {
 }
 
 .button-item-nav:hover {
-  background-color:#E5E1E5;
-  border-bottom: 2px #000000 solid;
+  background-color:#00CEFF;
+   border-bottom: 3px #00CEFF dashed;
 }
 
 
@@ -134,6 +158,7 @@ nav {
 	position:absolute;
   	bottom:0;
   	width:100%;
+  	background-color: rgba(255, 255, 255, 0.55);
 }
 
 .taste-item-nav {
@@ -232,7 +257,7 @@ nav {
 
 .picture  {
 	/*background: url(http://placehold.it/500x200);*/
-	background: url('../image/metro.jpg');
+	/*background: url('../image/metro.jpg');*/
 	background-repeat: no-repeat;
 	background-size:cover;
 	width:100%;
@@ -294,9 +319,13 @@ nav {
 }
 
 .picture h2 {
-	position:absolute;
-	top: 3em;
-	color:#FFFFFF;
+	position: absolute;
+  	top: 3em;
+ 	color: #FFFFFF;
+  	background-color: rgba(0, 0, 0, 0.86);
+ 	padding: 1em;
+  	margin: 1em;
+  	font-weight: lighter;
 }
 
 .picture-test {
@@ -866,6 +895,36 @@ select:-ms-expand {
 }
 
 @media(max-width: 35em) {
+
+
+	.button-item-nav{
+		margin-left: 5em;
+  		width: 50%;
+	}
+
+
+	iframe{
+		z-index: -1;
+	  	height: 36.5%;
+	  	width: 100%;
+
+	}
+
+	.picture h2{
+		/*margin-top:0;*/
+		/* width:100%; */
+	}
+
+	.taste-buttons{
+		background-color:#ffffff;
+		
+
+	}
+
+	.taste-item-nav {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
 
 
 	.taste-item-nav {
