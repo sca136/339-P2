@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1em;
+	font-size: 0.7em;
 	margin:0;
  	font-family: 'Montserrat', serif;
 	text-transform: uppercase;
@@ -43,6 +43,11 @@ p {
   text-decoration: none;
 }
 
+iframe {
+	z-index:-1;
+	height:22em;
+	width:100%;
+}
 
 /*Right Nav Bar*/
 .navBox {
@@ -286,11 +291,12 @@ nav {
 .text-box {
 	display:flex;
 	margin-left:15em;
+	margin-bottom:1em;
 	
 }
 
 .description {
-	margin:1em;
+	padding:1em;
 	flex-grow:2;
 }
 
@@ -304,6 +310,40 @@ nav {
 	display:flex;
 }
 
+.review {
+	margin-top:1em;
+	display:block;
+}
+
+
+
+.review p {
+	text-align:left;
+	padding-right:2em;
+	padding-left:0;
+	margin-top:2em;
+	display:inline-block;
+}
+
+.dp {
+	background: url(http://placehold.it/100x100);
+	background-size:100% 100%;
+	display:block;
+	width:4.5em;
+	min-height:4.5em;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+.comment {
+	margin:1em;
+}
+.comment h3{
+	display:inline-block;
+}
+
+
 
 .res-box {
 	margin-left:15em;
@@ -312,7 +352,6 @@ nav {
 /*FORM*/
 input {
 	display:inline-block;
-	width:60%;
 }
 
 
@@ -324,7 +363,34 @@ input {
   background-color: #FFFFFF;
   color: #DDAC72;
   padding: 0.7em;
+  width:60%;
   text-align: center;
+
+}
+
+#form-name-review{
+  border-bottom: solid 1px #000000;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  background-color: #FFFFFF;
+  color: #DDAC72;
+  padding: 0.3em;
+  text-align: center;
+  width:60%;
+}
+
+#form-comment{
+border-bottom: solid 1px #000000;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  background-color: #FFFFFF;
+  color: #DDAC72;
+  padding: 0.7em;
+  text-align: center;
+  width:95%;
+  height:2em;
 }
 
 
@@ -363,9 +429,9 @@ select:-ms-expand {
   text-transform: uppercase;
   display: inline-block;
   border-style: solid;
-  border-width:2px;
+  border-width:1px;
   border-color:#000000;
-  width:60%;
+  width:50%;
   transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
 }
 
@@ -384,6 +450,39 @@ select:-ms-expand {
     color: #000000;
 }
 
+.submit-nav2 {
+  margin-top:2em;
+  display: block;
+  padding: 0.3em 1.5em;
+  font-family: 'Open Sans', serif;
+  font-size:12px;
+  border-radius: 0.5em;
+  font-weight:bolder;
+  text-transform: uppercase;
+  display: inline-block;
+  border-style: solid;
+  border-width:1px;
+  border-color:#000000;
+  width:30%;
+  transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
+}
+
+.submit-nav2:hover, .submit-nav2:focus {
+  background-color:  #E5E1E5;
+  border-color:  #E5E1E5;
+}
+
+.submit-nav2 a:hover {
+  color: #000000;
+  transition: color 0.5s ease-out
+}
+
+.submit-nav2 a {
+    text-decoration:none;
+    color: #000000;
+}
+
+
 .menu {
 	position:relative;
 }
@@ -395,6 +494,34 @@ select:-ms-expand {
 }
 
 
+
+/* ABOUT PAGE */
+.about-content {
+	margin-top:1.5em;
+	margin-left:1.5em;
+	margin-right:1.5em;
+}
+
+.employer {
+	background: url('../image/profile.jpg') center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:100%;
+	height:19em;
+	position:relative;
+
+}
+
+/* CONTACT*/
+#contact-comment{
+	border: solid 1px #000000;
+  background-color: #FFFFFF;
+  color: #DDAC72;
+  padding: 0.7em;
+  text-align: center;
+  width:90%;
+  height:17.5em;
+}
 
 
 
@@ -418,14 +545,12 @@ select:-ms-expand {
   text-align: center;
 }
 
+
 .col-1of4 {
-	background: url(http://placehold.it/700x500);
-	background-size: 100% 100%;
-	border-style:solid;
 	border-width:1px;
 	display: block;
 	width:25%;
-	min-height:15em;
+	/*min-height:8em;*/
 }
 
 
@@ -434,9 +559,8 @@ select:-ms-expand {
 	border-width:1px;*/
 	display: block;
 	width:50%;
-	min-height:10em;
+	/*min-height:10em;*/
 	position:relative;
-	flex-grow: 2;
 }
 
 
@@ -445,9 +569,8 @@ select:-ms-expand {
 	border-width:1px;*/
 	display: block;
 	width:75%;
-	min-height:20em;
+	/*min-height:20em;*/
 	position:relative;
-	flex-shrink: 2;
 }
 
 .col-mof4{
@@ -476,7 +599,6 @@ select:-ms-expand {
 .col-4of4 {
 	/*display: block;*/
 	width:100%;
-	min-height:20em;
 	position:relative;
 }
 
@@ -500,10 +622,6 @@ select:-ms-expand {
 	  opacity: 0.9;
 	}
 
-	.col-4of4 {
-		width:100%;
-	}
-
 	.box-item-nav-1:hover {
 		min-width:50%;
 		background-color: #000000;
@@ -520,17 +638,27 @@ select:-ms-expand {
 
 	.text-box {
 		flex-wrap:wrap;
-		width:100%;
+		width:100%; 
 		margin-left:0;
 	}
 
 	.col-1of4, .col-2of4, .col-3of4, .col-mof4 {
 		width:100%;
-		min-height:15em;
 		top:0;
 		left:0;
 		margin:0;
 	}
+
+	.review p {
+		text-align:left;
+		padding-right:0;
+		padding-left:0;
+		margin-top:0;
+		margin-left:2em;
+		margin-right:2em;
+		display:inline-block;
+	}
+
 
 	/*.picture-test, .pepperlunch, .gyo, .random, .dinesty, .medina, .hubrestaurant, .meatbread {
 		width:550px;
