@@ -66,10 +66,13 @@ hr{
 }
 
 iframe {
-  z-index: -1;
-  height: 143%;
+  z-index: 1;
+  height:100%;
   width: 100%;
-  margin-top: -150px;
+  top:0;
+  left:0;
+  /*margin-top: -150px;*/
+  position:absolute;
 }
 
 /*Right Nav Bar*/
@@ -114,8 +117,7 @@ nav {
   -webkit-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  margin-left: 2em;
-  width: 50%;
+
 }
 
 
@@ -144,11 +146,23 @@ nav {
 
   text-align: center;
   padding: 1em 2.5em;
+  
 }
 
 .button-item-nav:hover {
-  background-color:#00CEFF;
-   border-bottom: 3px #00CEFF dashed;
+ /* background-color:#00CEFF;*/
+    border-bottom:solid 3px #00CEFF;
+}
+
+.button-item-nav:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition-timing-function: ease-out;
 }
 
 
@@ -745,6 +759,38 @@ select:-ms-expand {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
+.dd {
+	width:100%;
+	position:relative;
+}
+
+.word-layer {
+	width:100%;
+	height:100px;
+	background:#000000;
+	opacity:0.5;
+	z-index:4;
+}
+
+.dd>.word-layer {
+	position: absolute;
+
+	-webkit-transition: visibility 0s linear 0.5s, opacity 0.5s ease-out;
+	transition: visibility 0s linear 0.5s, opacity 0.5s ease-out;
+}
+
+.dd:hover>.word-layer {
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0s;
+}
+
+.word-layer:hover {
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0s;
+}
+
 
 
 [class^='col-'] { /*only select things that begin with col- */
@@ -829,6 +875,19 @@ select:-ms-expand {
 
 @media(max-width: 50em) {
 
+	.button-item-nav{
+		margin-left: 5em;
+		margin-right:5em;
+	}
+
+		iframe{
+		z-index: -1;
+	  	height:100%;
+	  	width: 100%;
+
+	}
+
+
 	.navBox {
 	  width: 100%;
 	  height:auto;
@@ -897,18 +956,6 @@ select:-ms-expand {
 @media(max-width: 35em) {
 
 
-	.button-item-nav{
-		margin-left: 5em;
-  		width: 50%;
-	}
-
-
-	iframe{
-		z-index: -1;
-	  	height: 36.5%;
-	  	width: 100%;
-
-	}
 
 	.picture h2{
 		/*margin-top:0;*/
@@ -935,7 +982,6 @@ select:-ms-expand {
 
 	.navBox {
 	  width: 100%;
-	  height:25em;
 	  float: left;
 	  display: block;
 	  border-width: 1px;
