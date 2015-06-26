@@ -272,6 +272,7 @@ nav {
 .picture  {
 	/*background: url(http://placehold.it/500x200);*/
 	/*background: url('../image/metro.jpg');*/
+	background:url('../image/medinacover.jpg');
 	background-repeat: no-repeat;
 	background-size:cover;
 	width:100%;
