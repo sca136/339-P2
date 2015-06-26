@@ -589,20 +589,56 @@ select:-ms-expand {
 
 
 /* ABOUT PAGE */
+.about {
+	background: url('../image/about.jpg') center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:100%;
+	height:19em;
+	position:relative;
+}
+
 .about-content {
 	margin-top:1.5em;
 	margin-left:1.5em;
 	margin-right:1.5em;
 }
 
-.employer {
-	background: url('../image/profile.jpg') center center;
+.employer1 {
+	background: url('../image/employer1.jpg') center center;
 	background-repeat: no-repeat;
 	background-size:cover;
 	width:100%;
 	height:19em;
 	position:relative;
 
+}
+
+.employer2 {
+	background: url('../image/employer2.jpg') center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:100%;
+	height:19em;
+	position:relative;
+}
+
+.employer3 {
+	background: url('../image/employer3.jpg') center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:100%;
+	height:19em;
+	position:relative;
+}
+
+.employer4 {
+	background: url('../image/employer4.jpg') center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:100%;
+	height:19em;
+	position:relative;
 }
 
 /* CONTACT*/
