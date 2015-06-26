@@ -124,7 +124,9 @@ nav {
 
 .button-item-nav:hover {
   background-color:#E5E1E5;
+  border-bottom: 2px #000000 solid;
 }
+
 
 /* Taste Buttons */
 .taste-buttons {
@@ -219,6 +221,14 @@ nav {
 	min-width:40%;
 	background-color:#000000;
 }
+
+
+
+
+
+
+
+
 
 .picture  {
 	/*background: url(http://placehold.it/500x200);*/
@@ -440,10 +450,11 @@ input {
 
 
 #form-name{
-  border-bottom: solid 1px #000000;
+  border-bottom: solid 2px #000000;
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
+  overflow:hidden;
   background-color: #FFFFFF;
   color: #DDAC72;
   padding: 0.7em;
@@ -453,7 +464,7 @@ input {
 }
 
 #form-name-review{
-  border-bottom: solid 1px #000000;
+  border-bottom: solid 2px #000000;
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
@@ -465,7 +476,7 @@ input {
 }
 
 #form-comment{
-border-bottom: solid 1px #000000;
+border-bottom: solid 2px #000000;
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
@@ -651,6 +662,10 @@ select:-ms-expand {
   width:90%;
   height:17.5em;
 }
+
+
+
+
 
 
 /* Bounce To Right */
