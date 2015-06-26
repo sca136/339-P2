@@ -642,7 +642,7 @@ select:-ms-expand {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #000000;
+  background: url('../image/layer.png');
   opacity:0.6;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
