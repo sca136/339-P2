@@ -264,7 +264,11 @@ nav {
 
 
 
-
+.reservation{
+	border: 2px solid #000000;
+	padding:1em;
+	color: teal;
+}
 
 
 
@@ -368,12 +372,20 @@ nav {
 	height:12.5em;
 }
 
+	.random p {
+		color:#ffffff;
+	}
+
 .gyo {
 	background: url('../image/gyo.png');
 	background-size: cover;
 	width:100%;
 	height:12.5em;
 }
+
+	.gyo p {
+		color:#ffffff;
+	}
 
 .medina {
 	background: url('../image/medina.jpg');
@@ -382,12 +394,22 @@ nav {
 	height:12.5em;
 }
 
+	.medina p {
+		color:#ffffff;
+	}
+
+
 .dinesty {
 	background: url('../image/dinesty.jpg');
 	background-size: cover;
 	width:100%;
 	height:12.5em;
 }
+
+	.dinesty p{
+		color:#ffffff;
+	}
+
 
 .hubrestaurant {
 	background: url('../image/hubrestaurant.jpg');
@@ -396,12 +418,21 @@ nav {
 	height:12.5em;
 }
 
+	.hubrestaurant p {
+		color:#ffffff;
+	}
+
 .meatbread {
 	background: url('../image/meatbread.jpg');
 	background-size: cover;
 	width:100%;
 	height:12.5em;
 }
+
+	.meatbread p {
+		color:#ffffff; 
+	}
+
 
 .text {
 	position:absolute;
