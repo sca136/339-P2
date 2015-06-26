@@ -2,6 +2,7 @@
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -55,6 +56,9 @@ iframe {
   float: left;
   display: block;
   height:100%;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;  
   transition: all 0.3s ease 0s;
 }
 
@@ -76,11 +80,17 @@ nav {
   width:15em;
   background-color:#FFFFFF;
   opacity: 0.9;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
 .button-item-nav {
   display:flex; /* for some reason display:flex must be on both topbox and buttonnav :/ */
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -93,6 +103,9 @@ nav {
   color: #000000;
   flex-grow: 1;  
   flex-basis: 0.4em;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 
   text-align: center;
@@ -121,7 +134,9 @@ nav {
   	padding: 1em 1em;
   	background-color: #000000;
   	opacity: 0.6;
-
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
   	 transition: all 0.3s ease 0s;
 }
 
@@ -139,6 +154,9 @@ nav {
 	padding-top:1em;
 	padding-bottom:1em;
 	color:#FFFFFF;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
 
@@ -150,6 +168,9 @@ nav {
 	position:relative;
 	border-style:solid;
 	border-width:1px;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
 
@@ -159,6 +180,9 @@ nav {
 	border-width:2px 1px;
 	border-color:#FFFFFF;*/
 	flex-grow:1;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 
@@ -172,7 +196,11 @@ nav {
 /*	border-style:solid;
 	border-width: 2px;
 	border-color:#FFFFFF;*/
+	-ms-flex-grow:1;
 	flex-grow:1;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -297,6 +325,7 @@ nav {
 
 .description {
 	padding:1em;
+	-ms-flex-grow:2;
 	flex-grow:2;
 }
 
@@ -442,7 +471,10 @@ select:-ms-expand {
 
 .submit-nav a:hover {
   color: #000000;
-  transition: color 0.5s ease-out
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: color 0.5s ease-out;
 }
 
 .submit-nav a {
@@ -464,6 +496,9 @@ select:-ms-expand {
   border-width:1px;
   border-color:#000000;
   width:30%;
+  -ms-transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
+  -webkit-transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
   transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
 }
 
@@ -474,7 +509,10 @@ select:-ms-expand {
 
 .submit-nav2 a:hover {
   color: #000000;
-  transition: color 0.5s ease-out
+  -ms-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
 }
 
 .submit-nav2 a {
@@ -514,7 +552,7 @@ select:-ms-expand {
 
 /* CONTACT*/
 #contact-comment{
-	border: solid 1px #000000;
+  border: solid 1px #000000;
   background-color: #FFFFFF;
   color: #DDAC72;
   padding: 0.7em;
@@ -583,6 +621,9 @@ select:-ms-expand {
 	position:absolute;
 	bottom:0;
 	z-index:3;
+	-ms-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
 
@@ -628,15 +669,18 @@ select:-ms-expand {
 	}
 
 	.box {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		margin:0;
 	}
 
 	.taste-buttons {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 
 	.text-box {
+		-ms-flex-wrap: wrap;
 		flex-wrap:wrap;
 		width:100%; 
 		margin-left:0;
@@ -670,6 +714,7 @@ select:-ms-expand {
 
 
 	.taste-item-nav {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 
@@ -694,6 +739,7 @@ select:-ms-expand {
 
 
 	.box {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		margin:0;
 	}
