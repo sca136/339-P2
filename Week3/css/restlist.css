@@ -142,7 +142,7 @@ nav {
   	font-size:0.8em;
   	text-align:center;
   	padding: 1em 1em;
-  	background-color: #000000;
+  	/*background-color: #000000;*/
   	opacity: 0.6;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
