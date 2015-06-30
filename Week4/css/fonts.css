@@ -1,0 +1,53 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+	text-decoration:none;
+}
+
+h1 {
+  font-size: 2.0em;
+  margin:0;
+  padding-left:0.5em;
+  font-family: 'Montserrat', serif;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin:0;
+  padding-left:0.5em;
+  font-family: 'Montserrat', serif;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+h3 {
+	font-size: 0.7em;
+	margin:0;
+ 	font-family: 'Montserrat', serif;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+}
+
+p {
+  font-size: 0.9em;
+  margin:0;
+  padding-left:1em;
+  font-family: 'Hind', serif;
+  color: #000000;
+  text-decoration: none;
+
+  /*might cause text weirdness on site*/
+  line-height: 1em;
+  padding-top: 1em;
+  padding-left: 1em;
+}

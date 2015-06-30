@@ -12,52 +12,6 @@ body {
 	margin:0;
 }
 
-a {
-	text-decoration:none;
-}
-
-h1 {
-  font-size: 2.0em;
-  margin:0;
-  padding-left:0.5em;
-  font-family: 'Montserrat', serif;
-  text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
-}
-
-h2 {
-  font-size: 1.3em;
-  margin:0;
-  padding-left:0.5em;
-  font-family: 'Montserrat', serif;
-  text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
-}
-
-h3 {
-	font-size: 0.7em;
-	margin:0;
- 	font-family: 'Montserrat', serif;
-	text-transform: uppercase;
-	color: #000000;
-	text-decoration: none;
-}
-
-p {
-  font-size: 0.9em;
-  margin:0;
-  padding-left:1em;
-  font-family: 'Hind', serif;
-  color: #000000;
-  text-decoration: none;
-
-  /*might cause text weirdness on site*/
-  line-height: 1em;
-  padding-top: 1em;
-  padding-left: 1em;
-}
 
 hr{
   width: 65%;
@@ -75,7 +29,7 @@ iframe {
   position:absolute;
 }
 
-/*Right Nav Bar*/
+/*LEFT NAVIGATION BAR*/
 .navBox {
   width: 15em;
   float: left;
@@ -93,8 +47,6 @@ iframe {
   box-shadow: 3px 0px 10px black;
   height:100%;
   z-index:4;
-	/*background: url(http://placehold.it/200x100);
-	background-repeat: no-repeat;*/
 }
 
 .logo {
@@ -115,8 +67,6 @@ nav {
   transition: all 0.3s ease 0s;
 }
 
-
-
 .button-nav img {
 	/*position:absolute;*/
 	width:3em;
@@ -131,9 +81,7 @@ nav {
   -webkit-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-
 }
-
 
 .button-item-nav p{
   font-size: 1em;
@@ -163,9 +111,8 @@ nav {
   
 }
 
-.line{
-   position: absolute;
-   /* left: -100%;*/
+.line{ /*In charge of the moving line*/
+    position: absolute;
     left:0;
     width: 0%;
     height: 3px;
@@ -194,7 +141,7 @@ nav {
 }
 
 
-/* Taste Buttons */
+/*TASTE BUTTONS ON RESTLIST*/
 .taste-buttons {
 	display:flex;
 	position:absolute;
@@ -224,11 +171,7 @@ nav {
 	opacity: 0.8;
 }
 
-
 .taste-item-nav a {
-
-/*	border-style:solid;
-  	border-width:1px;*/
 	padding-left:30%;
 	padding-right:30%;
 	padding-top:1em;
@@ -240,8 +183,7 @@ nav {
 	transition: all 0.3s ease 0s;
 }
 
-
-/*Selection Boxes*/
+/*SELECTION BOXES FOR ALL SITES*/
 .box {
 	display: flex;
 	margin-left: 15em;
@@ -275,9 +217,6 @@ nav {
 
 .box-item-nav-2 {
 	position:relative;
-/*	border-style:solid;
-	border-width: 2px;
-	border-color:#FFFFFF;*/
 	-ms-flex-grow:1;
 	flex-grow:1;
 	-moz-transition: all 0.5s;
@@ -294,6 +233,7 @@ nav {
 
 
 
+/*FOR RESERVATION PAGE*/
 .reservation{
 	border: 2px solid #000000;
 	padding:1em;
@@ -302,16 +242,32 @@ nav {
 
 
 
+/*IN CHARGE OF PICTURES IN RESTDETAILS AND OTHERS*/
 
-.picture  {
-	/*background: url(http://placehold.it/500x200);*/
-	/*background: url('../image/metro.jpg');*/
+.picture-test { /*DELETE THIS FOR FINAL*/
+  background: url('../image/pepperlunch.jpg');
+  background-size: cover;
+  width:100%;
+  height:12.5em;
+} 
+
+.picture  { /*Cover photo for RESTLIST page*/
 	background:url('../image/metro.jpg');
 	background-repeat: no-repeat;
 	background-size:cover;
 	width:100%;
 	height:22em;
 	position:relative;
+}
+
+.picture h2 {
+  position: absolute;
+  top: 3em;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.86);
+  padding: 1em;
+  margin: 1em;
+  font-weight: lighter;
 }
 
 .medinacover {
@@ -322,7 +278,6 @@ nav {
 	height:22em;
 	position:relative;
 }
-
 
 .trending {
 	background: url('../image/trending.jpg');
@@ -345,7 +300,6 @@ nav {
 	opacity:0.7;
 }
 
-
 .sour {
 	background: url('../image/citrus.jpg');
 	background-repeat: no-repeat;
@@ -355,8 +309,6 @@ nav {
 	position:relative;
 	opacity:0.7;
 }
-
-
 
 .sweet {
 	background: url('../image/macarons.jpg');
@@ -368,24 +320,6 @@ nav {
 	opacity:0.7;
 }
 
-.picture h2 {
-	position: absolute;
-  	top: 3em;
- 	color: #FFFFFF;
-  	background-color: rgba(0, 0, 0, 0.86);
- 	padding: 1em;
-  	margin: 1em;
-  	font-weight: lighter;
-}
-
-.picture-test {
-	background: url('../image/pepperlunch.jpg');
-	/*background: url(image/metro.jpg);*/
-	background-size: cover;
-	width:100%;
-	height:12.5em;
-} 
-
 .pepperlunch {
 	background: url('../image/pepperlunch.jpg');
 	background-size: cover;
@@ -394,7 +328,7 @@ nav {
 }
 
 .random {
-	background: url('../img/ramen2.jpg');
+	background: url('../image/ramen2.jpg');
 	background-size: cover;
 	width:100%;
 	height:12.5em;
@@ -461,7 +395,6 @@ nav {
 		color:#ffffff; 
 	}
 
-
 .text {
 	position:absolute;
 	bottom:1em;
@@ -482,10 +415,7 @@ nav {
 }
 
 
-/*FORM*/
-.form {
-	display:inline-block;
-}
+/*RESTDETAILS and RESRVATIONS FOR TEXTBOX*/
 
 .text-box {
 	display:flex;
@@ -515,8 +445,6 @@ nav {
 }
 
 .wrap {
-/*	border-style:solid;
-	border-width:1px;*/
 	display:flex;
 }
 
@@ -524,8 +452,6 @@ nav {
 	margin-top:1em;
 	display:block;
 }
-
-
 
 .review p {
 	text-align:left;
@@ -546,24 +472,20 @@ nav {
 
 }
 
-.comment {
-	margin:1em;
-}
-.comment h3{
-	display:inline-block;
-}
 
 
-
-.res-box {
-	margin-left:15em;
-}
-
-/*FORM*/
+/*FORM RESERVATIONS*/
 input {
 	display:inline-block;
 }
 
+.comment {
+  margin:1em;
+  text-align:center;
+}
+.comment h3{
+  display:inline-block;
+}
 
 #form-name{
   border-bottom: solid 2px #000000;
@@ -576,7 +498,6 @@ input {
   padding: 0.7em;
   width:60%;
   text-align: center;
-
 }
 
 #form-name-review{
@@ -588,22 +509,19 @@ input {
   color: #DDAC72;
   padding: 0.3em;
   text-align: center;
-  width:60%;
+  width:100%;
 }
 
 #form-comment{
-border-bottom: solid 2px #000000;
+  border-bottom: solid 2px #000000;
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
   background-color: #FFFFFF;
   color: #DDAC72;
-  padding: 0.7em;
   text-align: center;
-  width:90%;
-  height:2em;
+  width:100%;
 }
-
 
 select{
   background-color:transparent;
@@ -629,7 +547,7 @@ select:-ms-expand {
 	margin-top:1em;
 }
 
-.submit-nav {
+.submit-nav { /*BUTTONS FOR RESTDETALS*/
   margin-top:2em;
   display: block;
   padding: 0.3em 1.5em;
@@ -664,7 +582,7 @@ select:-ms-expand {
     color: #000000;
 }
 
-.submit-nav2 {
+.submit-nav2 { /*BUTTONS FOR RESERVATIONS*/
   margin-top:2em;
   display: block;
   padding: 0.3em 1.5em;
@@ -703,6 +621,7 @@ select:-ms-expand {
 }
 
 
+/*THIS WAS OR THE MENU IN RESTDETAILS*/
 .menu {
 	position:relative;
 }
@@ -768,7 +687,7 @@ select:-ms-expand {
 	position:relative;
 }
 
-/* CONTACT*/
+/* CONTACT PAGE*/
 #contact-comment{
   border: solid 1px #000000;
   background-color: #FFFFFF;
@@ -780,11 +699,7 @@ select:-ms-expand {
 }
 
 
-
-
-
-
-/* Bounce To Right */
+/* CODE FOR BOUNCING TO THE RIGHT */
 .hvr-bounce-to-right {
   width:100%;
   display: inline-block;
@@ -848,7 +763,6 @@ select:-ms-expand {
 
 
 /*SALTY*/
-
 .hvr-bounce-to-right-salty {
   width:100%;
   display: inline-block;
@@ -907,7 +821,6 @@ select:-ms-expand {
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
-
 
 
 /* SWEET*/
@@ -970,9 +883,6 @@ select:-ms-expand {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-
-
-
 /* SOUR*/
 .hvr-bounce-to-right-sour {
   width:100%;
@@ -1011,7 +921,6 @@ select:-ms-expand {
   background: url('../image/trending-foods-sour.png');
   background-size: 90%;
   background-repeat:no-repeat;
-  /*opacity:0.6;*/
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1033,11 +942,7 @@ select:-ms-expand {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-
-
-
-
-
+/*THIS WAS FOR A TEST, DELETE AFTER */
 .dd {
 	width:100%;
 	position:relative;
@@ -1070,87 +975,20 @@ select:-ms-expand {
 	transition-delay: 0s;
 }
 
+/*UP TILL HERE*/
 
 
-[class^='col-'] { /*only select things that begin with col- */
-  float:left;
-  padding:0;
-}
 
-
-/*GRID TEST */
-
-.grid {
-	display:block;
-	position:relative;
-	margin-left:15em;
-}
-
-[class^='col-'] { /*only select things that begin with col- */
-  float:left;
-  padding:0;
-  text-align: center;
-}
-
-
-.col-1of4 {
-	border-width:1px;
-	display: block;
-	width:25%;
-	/*min-height:8em;*/
-}
-
-
-.col-2of4 {
-/*	border-style:solid;
-	border-width:1px;*/
-	display: block;
-	width:50%;
-	/*min-height:10em;*/
-	position:relative;
-}
-
-
-.col-3of4{
-/*	border-style:solid;
-	border-width:1px;*/
-	display: block;
-	width:75%;
-	/*min-height:20em;*/
-	position:relative;
-}
-
-.col-mof4{
-	/*background: url(http://placehold.it/500x500);*/
-/*	border-style:solid;
-	border-width:1px;*/
-	display: block;
-	width:200%;
-	height:25em;
-	position:absolute;
-	bottom:0;
-	z-index:3;
-	-ms-transition: all 0.3s ease 0s;
-	-moz-transition: all 0.3s ease 0s;
-	-webkit-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-}
+/*OTHERS*/
 
 .hide {
-	visibility: hidden;
-	opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 
-/*.col-mof4:hover{
-	width:60em;
-}*/
 
 
-.col-4of4 {
-	/*display: block;*/
-	width:100%;
-	position:relative;
-}
+
 
 @media(max-width: 50em) {
 
@@ -1204,12 +1042,6 @@ select:-ms-expand {
 		margin-left:0;
 	}
 
-	.col-1of4, .col-2of4, .col-3of4, .col-mof4 {
-		width:50%;
-		top:0;
-		left:0;
-		margin:0;
-	}
 
 	.review p {
 		text-align:center;
@@ -1220,7 +1052,7 @@ select:-ms-expand {
 		display:inline-block;
 	}
 
-	.hvr-bounce-to-right:before {
+	.hvr-bounce-to-right:before { /* Centers the spicty bounce thing*/
 		  background: url('../image/trending-foods-spicy.png');
 		  background-size: contain;
 		  background-position:center;
@@ -1232,38 +1064,9 @@ select:-ms-expand {
     height:6.5em;
   }
 
-
-	/*.picture-test, .pepperlunch, .gyo, .random, .dinesty, .medina, .hubrestaurant, .meatbread {
-		width:550px;
-	}*/
-
 }
 
 @media(max-width: 35em) {
-
-
-
-	.picture h2{
-		/*margin-top:0;*/
-		/* width:100%; */
-	}
-
-	.taste-buttons{
-		
-
-	}
-
-/*	.taste-item-nav {
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-	}
-
-
-	.taste-item-nav {
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-	}
-*/
 
 	.navBox {
 	  width: 100%;
@@ -1279,21 +1082,9 @@ select:-ms-expand {
 	  opacity: 0.9;
 	}
 
-    .col-1of4, .col-2of4, .col-3of4, .col-mof4 {
-    width:100%;
-    top:0;
-    left:0;
-    margin:0;
-  }
-
-
 	.box {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		margin:0;
-	}
-
-	.grid {
 		margin:0;
 	}
 

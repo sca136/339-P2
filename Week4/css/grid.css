@@ -1,0 +1,83 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid {
+	display:block;
+	position:relative;
+	margin-left:15em;
+}
+
+[class^='col-'] { /*only select things that begin with col- */
+  float:left;
+  padding:0;
+  text-align: center;
+}
+
+
+.col-1of4 {
+	border-width:1px;
+	display: block;
+	width:25%;
+}
+
+
+.col-2of4 {
+	display: block;
+	width:50%;
+	position:relative;
+}
+
+
+.col-3of4{
+	display: block;
+	width:75%;
+	position:relative;
+}
+
+.col-mof4{
+	display: block;
+	width:200%;
+	height:25em;
+	position:absolute;
+	bottom:0;
+	z-index:3;
+	-ms-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.col-4of4 {
+	width:100%;
+	position:relative;
+}
+
+
+@media(max-width: 50em) {
+	.col-1of4, .col-2of4, .col-3of4, .col-mof4 {
+		width:50%;
+		top:0;
+		left:0;
+		margin:0;
+	}
+
+}
+
+@media(max-width: 35em) {
+    .col-1of4, .col-2of4, .col-3of4, .col-mof4 {
+    width:100%;
+    top:0;
+    left:0;
+    margin:0;
+  }
+
+
+}
+
+
+
+
