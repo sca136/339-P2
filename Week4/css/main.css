@@ -98,7 +98,8 @@ nav {
   font-weight:bolder;
   font-size:0.8em;
 
-  color: #000000;
+  color: #B8B8B8;
+  letter-spacing:5px;
   flex-grow: 1;  
   flex-basis: 0.4em;
   -moz-transition: all 0.3s ease 0s;
@@ -116,15 +117,15 @@ nav {
     left:0;
     width: 0%;
     height: 3px;
-    background:#000000;
+    background:rgba(160, 185, 207, 0.72);
     margin-top:2.3em;
     margin-left:35%;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .button-item-nav:hover .line{
  /* background-color:#00CEFF;*/
-    transition:1s;
+    transition:0.5s;
     width:30%;
     left:0;
 }
@@ -139,6 +140,28 @@ nav {
   bottom: 0;
   transition-timing-function: ease-out;
 }
+
+.social-media {
+  margin-top:1.1em;
+  margin-bottom:1.1em;
+  display:block
+  width:100%;
+  text-align:center;
+  bottom:0;
+}
+
+.facebook img {
+  width:3em;
+}
+
+.twitter img {
+  width:3em;
+}
+
+.instagram img {
+  width:3em;
+}
+
 
 
 /*TASTE BUTTONS ON RESTLIST*/
@@ -325,6 +348,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
+  opacity:0.7;
 }
 
 .random {
@@ -332,6 +356,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
+  opacity:0.7;
 }
 
 	.random p {
@@ -343,6 +368,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
+  opacity:0.7;
 }
 
 	.gyo p {
@@ -354,6 +380,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
+  opacity:0.7;
 }
 
 	.medina p {
@@ -366,6 +393,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
+  opacity:0.7;
 }
 
 	.dinesty p{
@@ -378,6 +406,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
+  opacity:0.7;
 }
 
 	.hubrestaurant p {
@@ -389,15 +418,19 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
+  opacity:0.7;
 }
 
 	.meatbread p {
 		color:#ffffff; 
 	}
 
+
+/*RESTDETAILS and RESRVATIONS FOR TEXTBOX*/
+
 .text {
 	position:absolute;
-	bottom:1em;
+	top:1em;
 	left:1em;
 }
 
@@ -414,8 +447,13 @@ nav {
 	padding: 0.35em;
 }
 
+.list-description {
+  margin-bottom:0.5em;
+}
 
-/*RESTDETAILS and RESRVATIONS FOR TEXTBOX*/
+
+
+
 
 .text-box {
 	display:flex;
@@ -976,6 +1014,22 @@ select:-ms-expand {
 }
 
 /*UP TILL HERE*/
+
+/*NEWS*/
+.news-image {
+  background: url(http://placehold.it/800x450);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width:100%;
+  height:15em;
+  position:relative;
+}
+
+.news-text {
+  margin-top:2.5em;
+
+}
+
 
 
 
