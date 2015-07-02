@@ -567,6 +567,51 @@ nav {
 }
 
 
+  .menu-col1of2{
+    text-align:left;
+    display:block;
+    width:30%;
+  }
+
+
+    .menu-col1of2 h3{
+      background-color:pink;
+      letter-spacing: 0.1em;
+    }
+
+    .menu-col1of2 ul{
+      list-style:none;
+      text-decoration: underline;
+    }
+
+    .menu-col1of2 ul li{
+      font-weight:bold;
+    }
+
+  .menu-col2of2{
+    text-align:left;
+    display:block;
+    width:20%;
+  }
+
+
+    .menu-col2of2 h3{
+      background-color:pink;
+      letter-spacing: 0.1em;
+    }
+
+    .menu-col2of2 ul{
+      list-style:none;
+      text-decoration: underline;
+    }
+
+    .menu-col2of2 ul li{
+      font-weight:bold;
+    }
+
+
+
+
 .descriptionpictures {
 	flex-wrap:wrap;
 }
@@ -1104,11 +1149,11 @@ select:-ms-expand {
 
 /*NEWS*/
 .news-image {
-  background: url(http://placehold.it/800x450);
+  background: url(../image/news-medina.gif);
   background-repeat: no-repeat;
   background-size:cover;
   width:100%;
-  height:13em;
+  height:15em;
   position:relative;
   
 }
