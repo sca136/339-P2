@@ -151,14 +151,20 @@ nav {
 }
 
 .facebook img {
+  display:block;
+  margin:1em auto;
   width:3em;
 }
 
 .twitter img {
+  display:block;
+  margin:1em auto;
   width:3em;
 }
 
 .instagram img {
+  display:block;
+  margin:1em auto;
   width:3em;
 }
 
@@ -235,8 +241,9 @@ nav {
 
 .box-item-nav-1:hover {
 	min-width:53%;
-	background-color: #000000;
+	background-color: rgba(215, 132, 2, 1);
 }
+
 
 .box-item-nav-2 {
 	position:relative;
@@ -250,7 +257,7 @@ nav {
 
 .box-item-nav-2:hover {
 	min-width:40%;
-	background-color:#000000;
+	background-color: rgba(215, 132, 2, 1);
 }
 
 
@@ -275,9 +282,9 @@ nav {
 } 
 
 .picture  { /*Cover photo for RESTLIST page*/
-	background:url('../image/metro.jpg');
+/*	background:url('../image/metro.jpg');
 	background-repeat: no-repeat;
-	background-size:cover;
+	background-size:cover;*/
 	width:100%;
 	height:22em;
 	position:relative;
@@ -348,7 +355,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
-  opacity:0.7;
+  opacity:0.8;
 }
 
 .ramen {
@@ -356,8 +363,9 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
-  opacity:0.7;
+  opacity:0.8;
 }
+
 
 	.ramen p {
 		color:#ffffff;
@@ -368,7 +376,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
-  opacity:0.7;
+  opacity:0.8;
 }
 
 	.gyo p {
@@ -380,7 +388,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
-  opacity:0.7;
+  opacity:0.8;
 }
 
 	.medina p {
@@ -393,7 +401,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
-  opacity:0.7;
+  opacity:0.8;
 }
 
 	.dinesty p{
@@ -406,7 +414,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
-  opacity:0.7;
+  opacity:0.8;
 }
 
 	.hubrestaurant p {
@@ -418,7 +426,7 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:12.5em;
-  opacity:0.7;
+  opacity:0.8;
 }
 
 	.meatbread p {
@@ -469,6 +477,11 @@ nav {
     font-weight: bold;
     text-align: justify;
     color: #080808;
+    transition: all 0.3s;
+  }
+
+  .list-description:hover p{
+    color:#FFFFFF;
   }
 
   .list-description strong{
@@ -1065,13 +1078,29 @@ select:-ms-expand {
   background-repeat: no-repeat;
   background-size:cover;
   width:100%;
-  height:15em;
+  height:13em;
   position:relative;
 }
 
 .news-text {
-  margin-top:2.5em;
+  margin:2.0em;
+  position:relative;
+  text-align:left;
+}
 
+.news-text h2 {
+  text-align:center;
+}
+
+.read-more {
+  position:absolute;
+  bottom:-1.5em;
+  right:0;
+}
+
+.next-page {
+  float:right;
+  padding:1em;
 }
 
 
@@ -1089,6 +1118,25 @@ select:-ms-expand {
 
 
 @media(max-width: 50em) {
+
+
+  .facebook img {
+  display:inline;
+  margin:1em 1em;
+  width:3em;
+  }
+
+  .twitter img {
+  display:inline;
+  margin:1em 1em;
+  width:3em;
+  }
+
+.instagram img {
+  display:inline;
+  margin:1em 1em;
+  width:3em;
+}
 
 	.button-item-nav{
 		margin-left: 5em;
@@ -1119,7 +1167,6 @@ select:-ms-expand {
 
 	.box-item-nav-1:hover {
 		min-width:50%;
-		background-color: #000000;
 	}
 
 	.box {
