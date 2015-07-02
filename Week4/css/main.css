@@ -46,7 +46,6 @@ iframe {
   padding-top: 2em;
   box-shadow: 2px 0px 10px rgb(187, 187, 187);
   height: 100%;
-  z-index: 4;
 }
 
 .logo {
@@ -177,6 +176,10 @@ nav {
   	bottom:0;
   	width:100%;
   	background-color: rgba(215, 132, 2, 1);
+    border-top-style:solid;
+  border-right-style:solid;
+  border-right-width:2px;
+  border-top-width:2px;
 }
 
 .taste-item-nav {
@@ -228,10 +231,13 @@ nav {
 
 .box-item-nav-1 {
 	position:relative;
-/*	border-style:solid;
-	border-width:2px 1px;
-	border-color:#FFFFFF;
-	border: 1px #000000 solid;*/
+  box-shadow: 2px 0px 10px rgb(187, 187, 187);
+	border-top-style:solid;
+  border-right-style:solid;
+/*	border-width:1px 1px;*/
+  border-right-width:2px;
+  border-top-width:2px;
+
 	flex-grow:1;
 	-moz-transition: all 0.5s ease 0s;
 	-webkit-transition: all 0.5s ease 0s;
@@ -247,6 +253,13 @@ nav {
 
 .box-item-nav-2 {
 	position:relative;
+  box-shadow: 2px 0px 10px rgb(187, 187, 187);
+  border-top-style:solid;
+  border-right-style:solid;
+ /* border-width:1px 1px;*/
+  border-right-width:2px;
+  border-top-width:2px;
+
 	-ms-flex-grow:1;
 	flex-grow:1;
 	-moz-transition: all 0.5s;
@@ -1220,6 +1233,12 @@ select:-ms-expand {
   #contact-comment{
     width:60%;
     height:6.5em;
+  }
+
+  .employer4, .employer1, .employer2, .employer3 {
+    width:80%;
+    margin: 0 auto;
+    margin-top:1em;
   }
 
 }
