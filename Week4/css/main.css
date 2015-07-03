@@ -600,8 +600,13 @@ nav {
   }
 
   .description h2{
-    text-align:left;
-    padding-bottom:0.7em;
+    text-align: left;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    line-height: 1em;
+    background-color: black;
+    color: #ffffff;
+
   }
 
 
