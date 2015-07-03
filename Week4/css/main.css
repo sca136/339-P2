@@ -609,14 +609,40 @@ nav {
   letter-spacing:0.1em;
 }
 
-.dp {
-	background: url(http://placehold.it/100x100);
+
+.dp-1 {
+  background: url(http://placehold.it/100x100);
+  background-size:100% 100%;
+  display:block;
+  width:4.5em;
+  min-height:4.5em;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+
+
+.dp-2 {
+	background: url(../image/reviewer-1.jpg);
 	background-size:100% 100%;
 	display:block;
 	width:4.5em;
 	min-height:4.5em;
 	margin-left:auto;
 	margin-right:auto;
+
+}
+
+
+.dp-3 {
+  background: url(http://placehold.it/100x100);
+  background-size:100% 100%;
+  display:block;
+  width:4.5em;
+  min-height:4.5em;
+  margin-left:auto;
+  margin-right:auto;
 
 }
 
