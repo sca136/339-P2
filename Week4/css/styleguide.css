@@ -29,7 +29,7 @@ body{
 }
 
 
-#imagery h2, #layout h2, #typography h2, #colors h2, #integrated h2, #interactive-elements h2{
+#imagery h2, #layout h2, #typography h2, #colors h2, #combined h2, #interactive-elements h2{
   padding:1em;
   color:#ffffff;
   background-color:rgba(215, 132, 2, 1);
@@ -194,6 +194,7 @@ p{
   padding-top: 1em;
   padding-left: 1em;
   letter-spacing:0.2em;
+  width:50%;
 }
 
 ul{
