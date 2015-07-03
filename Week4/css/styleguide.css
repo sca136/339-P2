@@ -148,3 +148,10 @@ nav {
 }
 
 
+@media(max-width:35em){
+    .content-container{
+      margin:0;
+    }
+}
+
+

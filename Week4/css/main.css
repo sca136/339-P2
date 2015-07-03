@@ -745,6 +745,7 @@ select:-ms-expand {
 .text-box h3 {
 	margin-top:1em;
   color: rgb(205, 47, 74);
+  letter-spacing:0.2em;
 }
 
 .submit-nav { /*BUTTONS FOR RESTDETALS*/
@@ -789,15 +790,17 @@ select:-ms-expand {
 .submit-nav2 { /*BUTTONS FOR RESERVATIONS*/
   margin-top:2em;
   display: block;
-  padding: 0.3em 1.5em;
+  padding: 1em;
   font-family: 'Montserrat', serif;
   font-size:12px;
   font-weight:bolder;
   text-transform: uppercase;
   display: inline-block;
   border-style: solid;
-  border-width:1px;
+  border-width:2px;
   border-color:#000000;
+  background-color:orange;
+  letter-spacing:0.2em;
   width:30%;
   -ms-transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
   -moz-transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
@@ -895,7 +898,7 @@ select:-ms-expand {
 
 /* CONTACT PAGE*/
 #contact-comment{
-  border: solid 1px #000000;
+  border: solid 2px #000000;
   background-color: #FFFFFF;
   color: #DDAC72;
   padding: 0.7em;
