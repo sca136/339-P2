@@ -290,14 +290,6 @@ nav {
 
 
 
-/*FOR RESERVATION PAGE*/
-.reservation{
-	border: 2px solid #000000;
-	padding:1em;
-	color: teal;
-}
-
-
 
 /*IN CHARGE OF PICTURES IN RESTDETAILS AND OTHERS*/
 
@@ -307,6 +299,17 @@ nav {
   width:100%;
   height:12.5em;
 } 
+
+.reservation{
+  background:url('../image/medina-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:22em;
+  padding:1em;
+  color: teal;
+}
+
+
 
 .picture  { /*Cover photo for RESTLIST page*/
 /*	background:url('../image/metro.jpg');
@@ -409,6 +412,15 @@ nav {
 	.gyo p {
 		color:#ffffff;
 	}
+
+.medina{
+  background: url('../image/medina.jpg');
+  background-size: cover;
+  width:100%;
+  height:12.5em;
+  opacity:0.8;  
+}
+
 
 .medina1 {
 	background: url('../image/medina-2.jpg');
@@ -1563,6 +1575,7 @@ select:-ms-expand {
   .about-content p{
     width: 100%;
   }
+
 
 
 }

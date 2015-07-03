@@ -237,6 +237,13 @@ textarea {
   /* 3 */
 }
 
+select{
+  text-transform: none;
+  color: #555555;
+  font-family: hind;
+  letter-spacing: 0.2em;
+}
+
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
