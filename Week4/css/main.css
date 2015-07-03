@@ -526,7 +526,7 @@ nav {
 
 .align-description{
   padding-right:2em;
-  padding-left:1em;
+  padding-left:2em;
   padding-top:1.5em;
   padding-bottom:0.75em;
   background-color:rgba(207,207,207,0.69);
@@ -539,15 +539,16 @@ nav {
 }
 
   .description p {
-    padding-left:-1em;
     text-align:left;
     letter-spacing:0.2em;
     word-spacing:0.2em;
     line-height:1.2em;
+
   }
 
   .description h2{
     text-align:left;
+    padding-bottom:0.7em;
   }
 
 
