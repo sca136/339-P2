@@ -1,5 +1,9 @@
 /* APPY'S STYLE GUIDE  */
 
+body{
+  color:#000000;
+}
+
 
 .box-style{
     -ms-flex-wrap: wrap;
@@ -36,8 +40,15 @@
 COLORS
 */
 
-.code colour-change{
-  background-color: pink;
+.imitate-h2{
+  font-size: 1.3em;
+  margin:0;
+  padding: 0 0 1em 0;
+  font-family: 'Montserrat', serif;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing:0.2em;
 }
 
 .palette{
@@ -53,6 +64,12 @@ COLORS
   float:left;
 }
 
+.color-sample-2{
+  width:100px;
+  height:100px;
+  background-color: #B8B8B8;
+  float:left;
+}
 
 .color-sample-3{
   width:100px;

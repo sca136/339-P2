@@ -287,8 +287,18 @@ nav {
 	background-color: rgba(215, 132, 2, 1);
 }
 
+/*about page intext-a*/
 
-
+.about-content a:hover {
+  border-bottom: 2px solid rgba(255, 0, 49, 0.89);
+  transition: 0.5s ease;
+  white-space: nowrap;
+}
+.about-content a {
+  color: #000000;
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+}
 
 
 /*IN CHARGE OF PICTURES IN RESTDETAILS AND OTHERS*/
@@ -725,12 +735,14 @@ input {
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
-  overflow:hidden;
+  overflow: hidden;
   background-color: #FFFFFF;
-  color: #DDAC72;
+  color: #555555;
   padding: 0.7em;
-  width:60%;
+  width: 60%;
   text-align: center;
+  letter-spacing: 0.2em;
+  font-family: hind, sans-serif;
 }
 
 #form-name-review{
@@ -933,7 +945,9 @@ select:-ms-expand {
 #contact-comment{
   border: solid 2px #000000;
   background-color: #FFFFFF;
-  color: #DDAC72;
+  color: #555555;
+  letter-spacing:0.2em;
+  font-family: "Hind", sans-serif;
   padding: 0.7em;
   text-align: center;
   width:90%;
@@ -1269,7 +1283,7 @@ select:-ms-expand {
   position:relative;
   text-align:left;
 
-    border-top-style: solid;
+  border-top-style: solid;
   border-top-width:2px;
   border-color:#000000;
 
@@ -1281,7 +1295,10 @@ select:-ms-expand {
   }
 
   .news-text h3{
-    background-color: rgb(253, 227, 98);
+  background-color: rgba(215, 132, 2, 1);
+  color: #000000;
+  font-weight: 400;
+  letter-spacing: 0.2em;
   }
 
   .news-text p{
