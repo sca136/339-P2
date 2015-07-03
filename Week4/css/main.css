@@ -525,17 +525,20 @@ nav {
 }
 
 .align-description{
-  padding-right:2em;
-  padding-left:2em;
-  padding-top:1.5em;
-  padding-bottom:0.75em;
+  padding:1em;
   background-color:rgba(207,207,207,0.69);
+
 }
 
 .description {
 	-ms-flex-grow:2;
 	flex-grow:2;
   position:relative;
+  padding-right:2em;
+  padding-left:2em;
+  padding-top:1.5em;
+  padding-bottom:1em;
+  /*background-color:rgba(207,207,207,0.69);*/
 }
 
   .description p {
@@ -566,16 +569,16 @@ nav {
   position:absolute;
   /*background: url(http://placehold.it/1000x1000);*/
   background-color:rgba(215, 132, 2, 1);
-  background: url(http://placehold.it/1000x1000) center center;
-  background-size:100% 100%;
+  /*background: url(http://placehold.it/1000x1000) center center;*/
+  /*background-size:100% 100%;*/
   /*background-size:cover;*/
-  width:210%;
-  height:210%;
+  width:200%;
   top:-50px;
   left:0;
   z-index:5;
   transition: all 0.5s;
   letter-spacing:0.1em;
+  padding:2em;
 
 }
 
@@ -596,7 +599,6 @@ nav {
 }
 
 .review {
-	margin-top:1em;
 	display:block;
 }
 
@@ -738,9 +740,8 @@ select:-ms-expand {
   border-width:2px;
   border-color:#000000;
   color:#000000;
-  padding:0.5em;
   background-color: rgba(226, 35, 72, 1);
-  width:40%;
+  width:50%;
   transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
 }
 
@@ -1512,6 +1513,13 @@ select:-ms-expand {
 
   .picture h2 {
     z-index:-1;
+  }
+
+  .menu-items-hidden {
+  width:100%;
+  height:100%;
+
+
   }
 
 

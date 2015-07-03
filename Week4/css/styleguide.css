@@ -21,6 +21,7 @@
   padding: 1em;
   display: block;
   letter-spacing: 0.2em;
+  overflow:auto;
 }
 
 
@@ -42,6 +43,7 @@ COLORS
 .palette{
   margin:0;
   width:100%;
+  float:left;
 }
 
 .color-sample-1{
