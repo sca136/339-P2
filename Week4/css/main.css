@@ -448,6 +448,85 @@ nav {
 		color:#ffffff;
 	}
 
+
+
+.sweet-tree {
+  background: url('../image/treesorganic.jpg');
+  background-size: cover;
+  width:100%;
+  height:12.5em;
+  opacity:0.8;
+}
+
+  .sweet-tree p {
+    color:#ffffff;
+  }
+
+
+.sweet-earnest {
+  background: url('../image/sweet-earnest.jpg');
+  background-size: cover;
+  width:100%;
+  height:12.5em;
+  opacity:0.8;
+}
+
+  .sweet-earnest p {
+    color:#ffffff;
+  }
+
+
+.sweet-cookies {
+  background: url('../image/sweet-cookies.jpg');
+  background-size: cover;
+  width:100%;
+  height:12.5em;
+  opacity:0.8;
+}
+
+  .sweet-cookies p {
+    color:#ffffff;
+  }
+
+
+.sweet-theirry {
+  background: url('../image/sweet-theirry.jpg');
+  background-size: cover;
+  width:100%;
+  height:12.5em;
+  opacity:0.8;
+}
+
+  .sweet-theirry p {
+    color:#ffffff;
+  }
+
+.sweet-mango {
+  background: url('../image/sweet-mango.jpg');
+  background-size: cover;
+  width:100%;
+  height:12.5em;
+  opacity:0.8;
+}
+
+  .sweet-mango p {
+    color:#ffffff;
+  }
+
+.sweet-nero {
+  background: url('../image/sweet-nero.jpg');
+  background-size: cover;
+  width:100%;
+  height:12.5em;
+  opacity:0.8;
+}
+
+  .sweet-nero p {
+    color:#ffffff;
+  }
+
+
+
 .medina{
   background: url('../image/medina.jpg');
   background-size: cover;
