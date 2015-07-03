@@ -319,7 +319,7 @@ nav {
 }
 
 .medinacover {
-	background: url('../image/medinacover.jpg');
+	background: url('../image/medinacover2.jpg');
 	background-repeat: no-repeat;
 	background-size:cover;
 	width:100%;
@@ -401,17 +401,42 @@ nav {
 		color:#ffffff;
 	}
 
-.medina {
-	background: url('../image/medina.jpg');
+.medina1 {
+	background: url('../image/medina-2.jpg');
 	background-size: cover;
 	width:100%;
-	height:12.5em;
+	height:18em;
   opacity:0.8;
 }
 
 	.medina p {
 		color:#ffffff;
 	}
+
+
+.medina2{
+  background: url('../image/medina-6.jpg');
+  background-size: cover;
+  width:100%;
+  height:18em;
+  opacity:0.8; 
+}
+
+.medina3{
+  background: url('../image/medina-3.jpg');
+  background-size: cover;
+  width:100%;
+  height:18em;
+  opacity:0.8; 
+}
+
+.medina4{
+  background: url('../image/medinacover.jpg');
+  background-size: cover;
+  width:100%;
+  height:18em;
+  opacity:0.8; 
+}
 
 
 .dinesty {
