@@ -1,0 +1,150 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+
+.box-style{
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap:wrap;
+    -webkit-flex-wrap:wrap;
+    flex-wrap: wrap;
+    margin:0;
+}
+
+
+.content-container{
+  margin-left:15em;
+}
+
+
+section code {
+  background-color: #aaaaaa;
+  padding: 1em;
+  display: block;
+}
+
+
+
+
+/* INTERACTIVE ELEMENTS -------------------
+ an in-text link
+ the navigation button style
+ a submit and reset button for forms
+ a text input field and a label        */
+
+
+
+/* Styling for the navigation button */
+
+
+/* Styling for In-text Link */
+.intext-a{
+
+}
+
+.intext-a:hover{
+
+}
+
+
+/* Styling for Submit and Reset Buttons*/
+
+.button-submit{
+
+} /*Reference for Material shadow: http://codepen.io/iraycd/pen/dHrxv */
+
+
+.button-submit:active, .button-submit-active{
+ 
+}
+
+/* Styling for Input field and label*/
+
+#form-name{
+ 
+
+}
+
+#form-subject{
+
+}
+
+#form-comment{
+
+}
+
+
+
+/* TEXT ELEMENTS -------------------
+ three levels of headings
+ a paragraph
+ bulletted list
+ numbered lists                  */
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+
+
+p{
+
+}
+
+ul{
+
+}
+
+ol{
+
+}
+
+
+  
+/*  COMBINED ELEMENTS -------------------
+ your main navigation
+ a product listing                   */
+
+
+nav {
+
+}
+
+
+.ul-product{
+
+}
+
+.ul-product:hover{
+
+}
+
+.ul-product p{
+
+
+}
+
+
+.ul-product:hover p{
+
+}
+
+
+@media(max-width: 50em){
+
+    .content-container{
+      margin:0;
+    }
+
+}
+
+
