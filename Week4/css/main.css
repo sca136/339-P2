@@ -76,7 +76,9 @@ nav {
 }
 
 .button-item-nav {
+  display:-webkit-flex;
   display:flex; /* for some reason display:flex must be on both topbox and buttonnav :/ */
+
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
@@ -101,7 +103,10 @@ nav {
 
   color: #222222;
   letter-spacing:5px;
+  -webkit-flex-grow: 1;
   flex-grow: 1;  
+
+  -webkit-flex-basis:0.4em;
   flex-basis: 0.4em;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
@@ -176,6 +181,7 @@ nav {
 
 /*TASTE BUTTONS ON RESTLIST*/
 .taste-buttons {
+  display:-webkit-flex;
 	display:flex;
 	position:absolute;
   	bottom:0;
@@ -185,9 +191,11 @@ nav {
   border-right-style:solid;
   border-right-width:2px;
   border-top-width:2px;
+  z-index:1;
 }
 
 .taste-item-nav {
+  -webkit-flex-grow:1;
 	flex-grow:1;
 	font-family: 'Montserrat', serif;
   	text-transform: uppercase;
@@ -222,6 +230,7 @@ nav {
 
 /*SELECTION BOXES FOR ALL SITES*/
 .box {
+  display:-webkit-flex;
 	display: flex;
 	margin-left: 15em;
 	position:relative;
@@ -522,6 +531,9 @@ nav {
     text-align: left;
     color: #080808;
     transition: all 0.3s;
+
+    padding-top: 1em;
+    padding-left: 1em;
   }
 
   .list-description:hover p{
@@ -543,6 +555,7 @@ nav {
   }
 
 .text-box {
+  display:-webkit-flex;
 	display:flex;
 	margin-left:15em;
 	margin-bottom:1em;
@@ -614,13 +627,16 @@ nav {
 
 
 .descriptionpictures {
+  -webkit-flex-wrap:wrap;
 	flex-wrap:wrap;
 }
 
 
 
 .wrap {
+  display:-webkit-flex;
 	display:flex;
+
 }
 
 .review {
@@ -842,16 +858,14 @@ select:-ms-expand {
 }
 
 .about-content {
-	margin-top:1.5em;
-	margin-left:1.5em;
-	margin-right:1.5em;
+	margin:1.5em;
 }
 
   .about-content p {
+      margin:0 auto;
       width: 70%;
       text-align: justify;
       letter-spacing: 0.2em;
-      margin: 0 7em 0 7em;
   }
 
   .about-content h2 {
@@ -1434,17 +1448,20 @@ select:-ms-expand {
 	}
 
 	.box {
+    -webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		margin:0;
 	}
 
 	.taste-buttons {
+    -webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 
 	.text-box {
+    -webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap:wrap;
 		width:100%; 
@@ -1517,6 +1534,7 @@ select:-ms-expand {
 	}
 
 	.box {
+    -webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		margin:0;
@@ -1545,6 +1563,10 @@ select:-ms-expand {
   height:100%;
 
 
+  }
+
+  .about-content p{
+    width: 100%;
   }
 
 
