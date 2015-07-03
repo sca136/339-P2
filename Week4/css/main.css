@@ -136,6 +136,7 @@ nav {
     transition: all 0.5s;
 }
 
+
 .button-item-nav:hover .line{
  /* background-color:#00CEFF;*/
     transition:0.5s;
@@ -1021,7 +1022,7 @@ select:-ms-expand {
   background: url('../image/trending-foods-spicy2.png');
   background-size: 90%;
   background-repeat:no-repeat;
-  /*opacity:0.6;*/
+  background-position:center;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1082,7 +1083,7 @@ select:-ms-expand {
   background: url('../image/trending-foods-salty2.png');
   background-size: 90%;
   background-repeat:no-repeat;
-  /*opacity:0.6;*/
+  background-position:center;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1143,7 +1144,7 @@ select:-ms-expand {
   background: url('../image/trending-foods-sweet2.png');
   background-size: 90%;
   background-repeat:no-repeat;
-  /*opacity:0.6;*/
+  background-position:center;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1203,6 +1204,7 @@ select:-ms-expand {
   background: url('../image/trending-foods-sour2.png');
   background-size: 90%;
   background-repeat:no-repeat;
+  background-position:center;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1548,12 +1550,6 @@ select:-ms-expand {
     letter-spacing:0.1em;
 	}
 
-	.hvr-bounce-to-right:before { /* Centers the spicty bounce thing*/
-		  background: url('../image/trending-foods-spicy.png');
-		  background-size: contain;
-		  background-position:center;
-		  background-repeat: no-repeat;
-	}
 
   #contact-comment{
     width:60%;
