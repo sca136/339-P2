@@ -1654,6 +1654,7 @@ select:-ms-expand {
 
 
 
+
 }
 
 @media(max-width: 35em) {
@@ -1703,6 +1704,8 @@ select:-ms-expand {
   .about-content p{
     width: 100%;
   }
+
+
 
 
 
