@@ -44,8 +44,9 @@ iframe {
 
 .topbox {
   padding-top: 2em;
-  box-shadow: 2px 0px 10px rgb(187, 187, 187);
+  box-shadow: 2px 0px 10px rgb(144, 144, 144);
   height: 100%;
+  z-index: 10;
 }
 
 .logo {
@@ -364,7 +365,7 @@ nav {
 }
 
 .pepperlunch {
-	background: url('../image/pepperlunch.jpg');
+	background: url('../image/pepperlunch2.jpg');
 	background-size: cover;
 	width:100%;
 	height:12.5em;
@@ -423,7 +424,7 @@ nav {
 
 
 .hubrestaurant {
-	background: url('../image/hubrestaurant.jpg');
+	background: url('../image/hub.jpg');
 	background-size: cover;
 	width:100%;
 	height:12.5em;
@@ -465,14 +466,15 @@ nav {
 	color:#FFFFFF;
 	/*background-color: rgb(67, 203, 173);*/
 	background-color:#000000;
-	padding: 0.35em;
+  border: 2px solid #000000;
+	padding: 0.5em;
 }
 
 .text h4{
-  font-weight:lighter;
-  color:#000000;
-  border: 1px solid #000000;
-  padding:0.35em;
+  font-weight: bold;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 0.5em;
 }
 
 
@@ -483,12 +485,12 @@ nav {
 
 
   .list-description p {
-    width: 65%;
+    width: 85%;
     line-height: 1.4em;
-    letter-spacing: 0.26em;
+    letter-spacing: 0.25em;
     word-spacing: 0.5em;
     font-weight: bold;
-    text-align: justify;
+    text-align: left;
     color: #080808;
     transition: all 0.3s;
   }
@@ -548,6 +550,7 @@ nav {
 /*THIS WAS OR THE MENU IN RESTDETAILS*/
 .menu {
   position:relative;
+  letter-spacing:0.1em;
 }
 
 .menu-items-hidden {
@@ -555,7 +558,8 @@ nav {
   position: absolute;
   opacity: 0;*/
   position:absolute;
-  background: url(http://placehold.it/1000x1000);
+  /*background: url(http://placehold.it/1000x1000);*/
+  background-color:rgba(215, 132, 2, 1);
   background-size:100% 100%;
   width:200%;
   height:200%;
@@ -563,53 +567,14 @@ nav {
   left:0;
   z-index:5;
   transition: all 0.5s;
+  letter-spacing:0.1em;
 
 }
 
+.menu-items-hidden ul, .menu-items-hidden ul li{
+  list-style:none;
 
-  .menu-col1of2{
-    text-align:left;
-    display:block;
-    width:30%;
-  }
-
-
-    .menu-col1of2 h3{
-      background-color:pink;
-      letter-spacing: 0.1em;
-    }
-
-    .menu-col1of2 ul{
-      list-style:none;
-      text-decoration: underline;
-    }
-
-    .menu-col1of2 ul li{
-      font-weight:bold;
-    }
-
-  .menu-col2of2{
-    text-align:left;
-    display:block;
-    width:20%;
-  }
-
-
-    .menu-col2of2 h3{
-      background-color:pink;
-      letter-spacing: 0.1em;
-    }
-
-    .menu-col2of2 ul{
-      list-style:none;
-      text-decoration: underline;
-    }
-
-    .menu-col2of2 ul li{
-      font-weight:bold;
-    }
-
-
+}
 
 
 .descriptionpictures {
@@ -819,6 +784,19 @@ select:-ms-expand {
 	margin-left:1.5em;
 	margin-right:1.5em;
 }
+
+  .about-content p {
+      width: 70%;
+      text-align: justify;
+      letter-spacing: 0.2em;
+      margin: 0 7em 0 7em;
+  }
+
+  .about-content h2 {
+      letter-spacing: 0.2em;
+      padding-bottom: 0.5em;
+  }
+
 
 .employer1 {
 	background: url('../image/employer1.jpg') center center;
@@ -1158,6 +1136,36 @@ select:-ms-expand {
   
 }
 
+  .news-image-2{
+  background: url(../image/treesorganic.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width:100%;
+  height:15em;
+  position:relative;  
+  }
+
+  .news-image-3{
+  background: url(../image/news-saltyicecream.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width:100%;
+  height:15em;
+  position:relative;  
+  }
+
+  .news-image-4{
+  background: url(../image/news-wuhd.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width:100%;
+  height:15em;
+  position:relative;  
+  }
+
+
+
+
 .news-text {
   margin:2.0em;
   position:relative;
@@ -1274,6 +1282,10 @@ select:-ms-expand {
 		margin-left:0;
 	}
 
+    .text-box h2{
+    letter-spacing: 0.2em;
+    padding: 1em;
+    }
 
 	.review p {
 		text-align:left;

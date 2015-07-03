@@ -22,11 +22,12 @@ h1 {
 h2 {
   font-size: 1.3em;
   margin:0;
-  padding-left:0.5em;
+  padding:1em;
   font-family: 'Montserrat', serif;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  letter-spacing:0.2em;
 }
 
 h3 {
