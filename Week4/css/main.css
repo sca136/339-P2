@@ -992,7 +992,7 @@ select:-ms-expand {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../image/trending-foods-spicy.png');
+  background: url('../image/trending-foods-spicy2.png');
   background-size: 90%;
   background-repeat:no-repeat;
   /*opacity:0.6;*/
@@ -1053,7 +1053,7 @@ select:-ms-expand {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../image/trending-foods-salty.png');
+  background: url('../image/trending-foods-salty2.png');
   background-size: 90%;
   background-repeat:no-repeat;
   /*opacity:0.6;*/
@@ -1114,7 +1114,7 @@ select:-ms-expand {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../image/trending-foods-sweet.png');
+  background: url('../image/trending-foods-sweet2.png');
   background-size: 90%;
   background-repeat:no-repeat;
   /*opacity:0.6;*/
@@ -1174,7 +1174,7 @@ select:-ms-expand {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../image/trending-foods-sour.png');
+  background: url('../image/trending-foods-sour2.png');
   background-size: 90%;
   background-repeat:no-repeat;
   -webkit-transform: scaleX(0);
