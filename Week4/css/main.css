@@ -81,6 +81,7 @@ nav {
   -webkit-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  position:relative;
 }
 
 .button-item-nav p{
@@ -109,7 +110,10 @@ nav {
 
   text-align: center;
   padding: 1em 2.5em;
-  
+}
+
+.button-nav-res {
+  background-color:grey;
 }
 
 .line{ /*In charge of the moving line*/
@@ -558,12 +562,17 @@ nav {
   position: absolute;
   opacity: 0;*/
   position:absolute;
+<<<<<<< Updated upstream
   /*background: url(http://placehold.it/1000x1000);*/
   background-color:rgba(215, 132, 2, 1);
+=======
+  background: url(http://placehold.it/1000x1000) center center;
+>>>>>>> Stashed changes
   background-size:100% 100%;
-  width:200%;
-  height:200%;
-  top:-15em;
+  /*background-size:cover;*/
+  width:210%;
+  height:210%;
+  top:-50px;
   left:0;
   z-index:5;
   transition: all 0.5s;
@@ -574,7 +583,57 @@ nav {
 .menu-items-hidden ul, .menu-items-hidden ul li{
   list-style:none;
 
+<<<<<<< Updated upstream
 }
+=======
+  .menu-col1of2{
+    text-align:left;
+    display:block;
+    /*width:30%;*/
+    width:100%;
+    float:left:; /* add this too */
+  }
+
+
+    .menu-col1of2 h3{
+      background-color:pink;
+      letter-spacing: 0.1em;
+    }
+
+    .menu-col1of2 ul{
+      list-style:none;
+      text-decoration: underline;
+    }
+
+    .menu-col1of2 ul li{
+      font-weight:bold;
+    }
+
+  .menu-col2of2{
+    text-align:left;
+    display:block;
+   /* width:20%;*/
+   width:50%;
+   float:left;
+  }
+
+
+    .menu-col2of2 h3{
+      background-color:pink;
+      letter-spacing: 0.1em;
+    }
+
+    .menu-col2of2 ul{
+      list-style:none;
+      text-decoration: underline;
+    }
+
+    .menu-col2of2 ul li{
+      font-weight:bold;
+    }
+
+
+>>>>>>> Stashed changes
 
 
 .descriptionpictures {
@@ -674,7 +733,7 @@ select{
 
   border-style:solid;
   border-width: 2px;
-  border-radius: 1em;
+  border-radius: 5em;
   border-color: #000000;
 }
 
@@ -733,7 +792,6 @@ select:-ms-expand {
   padding: 0.3em 1.5em;
   font-family: 'Montserrat', serif;
   font-size:12px;
-  border-radius: 0.5em;
   font-weight:bolder;
   text-transform: uppercase;
   display: inline-block;
@@ -1127,12 +1185,16 @@ select:-ms-expand {
 
 /*NEWS*/
 .news-image {
-  background: url(../image/news-medina.gif);
+  background: url(../image/news-medina.gif) center center;
   background-repeat: no-repeat;
-  background-size:cover;
+  /*background-size:100% 100%;*/
+  background-size: contain;
   width:100%;
   height:15em;
   position:relative;
+  border-top-style: solid;
+  border-top-width:2px;
+  border-color:#000000;
   
 }
 
@@ -1167,9 +1229,13 @@ select:-ms-expand {
 
 
 .news-text {
-  margin:2.0em;
+  padding:2.0em;
   position:relative;
   text-align:left;
+
+    border-top-style: solid;
+  border-top-width:2px;
+  border-color:#000000;
 
 }
 
@@ -1183,13 +1249,19 @@ select:-ms-expand {
   }
 
   .news-text p{
-    letter-spacing: 0.2em;
-    width:50%;
+      letter-spacing: 0.2em;
+      width:50%;
+    }
+
+  @media(max-width: 72em) {
+    .news-text p{
+      width:100%;
+    }
   }
 
 .read-more {
   position:absolute;
-  bottom:-1.5em;
+  bottom:1em;
   right:0;
 }
 
@@ -1199,7 +1271,90 @@ select:-ms-expand {
 }
 
 
+/*RESERVATION - CART*/
 
+.cart-items {
+  position:absolute;
+  width:350%;
+  transition: all 0.5s;
+}
+
+.cart-info {
+  margin:1em auto;
+  padding:1em;
+  width:95%;
+  height:11em;
+  background-color:#000000;
+}
+  .cart-info h1 {
+    color:#FFFFFF;
+    text-align:left;
+    padding-bottom:0.2em;
+    margin:0;
+  }
+
+.cart-content-1 {
+  float:left;
+}
+
+.cart-content-1 h2, .cart-content-1 h3, .cart-content-1 p {
+  text-align: left;
+  color:#FFFFFF;
+}
+
+.cart-border {
+  padding-top:0.5em;
+  border-top-style:solid;
+  border-top-width:2px;
+  border-top-color:#FFFFFF;
+}
+
+.cross h2{
+  text-align:right;
+  color:#FFFFFF;
+}
+
+.button {
+  color:#FFFFFF;
+}
+
+.submit-nav-cancel { /*BUTTONS FOR RESERVATIONS*/
+  margin-top:2em;
+  display: block;
+  padding: 0.3em 1.5em;
+  font-family: 'Montserrat', serif;
+  font-size:12px;
+  border-radius: 0.5em;
+  font-weight:bolder;
+  text-transform: uppercase;
+  display: inline-block;
+  border-style: solid;
+  border-width:1px;
+  border-color:#FFFFFF;
+  width:30%;
+  -ms-transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
+  -webkit-transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out, border-color 0.5s ease-out;
+}
+
+.submit-nav-cancel:hover, .submit-nav2:focus {
+  background-color:  #E5E1E5;
+  border-color:  #E5E1E5;
+}
+
+.submit-nav-cancel a:hover {
+  color: #000000;
+  -ms-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.submit-nav-cancel a {
+    text-decoration:none;
+    color: #FFFFFF;
+}
 
 /*OTHERS*/
 
@@ -1315,6 +1470,20 @@ select:-ms-expand {
     margin-top:1em;
   }
 
+  .news-text {
+
+    border-top-style: none;
+}
+  .cart-info {
+    height:11em;
+  }
+
+  .cart-items {
+    width:100%;
+  }
+
+
+
 }
 
 @media(max-width: 35em) {
@@ -1338,5 +1507,24 @@ select:-ms-expand {
 		flex-wrap: wrap;
 		margin:0;
 	}
+
+  .cart-info {
+    height:20em;
+
+  }
+
+  .cart-content-1 h3 {
+    padding-top:1em;
+  }
+
+  .cart-border {
+    text-align:center;
+    border-top-style:none;
+  }
+
+  .picture h2 {
+    z-index:-1;
+  }
+
 
 }
