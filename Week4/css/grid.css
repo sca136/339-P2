@@ -19,15 +19,16 @@
 
 
 .col-1of4 {
-	border-width:1px;
 	display: block;
 	width:25%;
+	position:relative;
 }
 
 
 .col-2of4 {
 	display: block;
 	width:50%;
+	position:relative;
 }
 
 
