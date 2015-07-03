@@ -570,7 +570,6 @@ nav {
   display:-webkit-flex;
 	display:flex;
 	margin-left:15em;
-	margin-bottom:1em;
 	
 }
 
@@ -755,6 +754,8 @@ input {
   color: #DDAC72;
   text-align: center;
   width:100%;
+  max-width:100%;
+  max-height:6em;
 }
 
 select{
