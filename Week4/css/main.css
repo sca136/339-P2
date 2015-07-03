@@ -20,6 +20,7 @@ hr{
 }
 
 iframe {
+  frameBorder:0;
   z-index: 0;
   height:100%;
   width: 100%;
@@ -52,6 +53,11 @@ iframe {
 .logo {
 	text-align: center;
 	margin-bottom:1em;
+}
+
+.logo img{
+  width:9.4em;
+  height:6.25em;
 }
 
 nav {
@@ -198,7 +204,7 @@ nav {
   -webkit-flex-grow:1;
 	flex-grow:1;
 	font-family: 'Montserrat', serif;
-  	text-transform: uppercase;
+  text-transform: uppercase;
  	font-weight:bolder;
   	font-size:0.8em;
   	text-align:center;
@@ -210,6 +216,8 @@ nav {
 	-ms-transition: all 0.3s ease 0s;
   	 transition: all 0.3s ease 0s;
   	 position:relative;
+
+     width:11.8em;
 }
 
 .taste-item-nav:hover {
@@ -730,7 +738,7 @@ input {
   display:inline-block;
 }
 
-#form-name{
+.form-name {
   border-bottom: solid 2px #000000;
   border-top-style: none;
   border-left-style: none;
@@ -745,7 +753,7 @@ input {
   font-family: hind, sans-serif;
 }
 
-#form-name-review{
+.form-name-review{
   border-bottom: solid 2px #000000;
   border-top-style: none;
   border-left-style: none;
@@ -756,6 +764,7 @@ input {
   text-align: center;
   width:100%;
 }
+
 
 #form-comment{
   border-bottom: solid 2px #000000;
@@ -1238,14 +1247,14 @@ select:-ms-expand {
   background: url(../image/news-medina.gif) center center;
   background-repeat: no-repeat;
   /*background-size:100% 100%;*/
-  background-size: contain;
+  background-size: cover;
   width:100%;
   height:15em;
   position:relative;
-  border-top-style: solid;
+  /*border-top-style: solid;
   border-top-width:2px;
   border-color:#000000;
-  
+  */
 }
 
   .news-image-2{
@@ -1283,9 +1292,7 @@ select:-ms-expand {
   position:relative;
   text-align:left;
 
-  border-top-style: solid;
-  border-top-width:2px;
-  border-color:#000000;
+  
 
 }
 
@@ -1321,6 +1328,13 @@ select:-ms-expand {
 .next-page {
   float:right;
   padding:1em;
+}
+
+.box-border {
+  border-top-style: solid;
+  border-top-width:2px;
+  border-color:#000000;
+
 }
 
 
