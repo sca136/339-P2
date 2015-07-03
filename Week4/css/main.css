@@ -74,11 +74,9 @@ nav {
 }
 
 .button-nav img {
-	/*position:absolute;*/
 	width:3em;
 	height:3em;
-	top:0;
-	left:0;
+/*  margin:0 auto;*/
 }
 
 .button-item-nav {
@@ -234,6 +232,25 @@ nav {
 	-webkit-transition: all 0.3s ease 0s;
 	-ms-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
+}
+
+.taste-item-nav-selected {
+  -webkit-flex-grow:1;
+  flex-grow:1;
+  font-family: 'Montserrat', serif;
+  text-transform: uppercase;
+  font-weight:bolder;
+    font-size:0.8em;
+    text-align:center;
+    padding: 1em 1em;
+    /*background-color: #000000;*/
+    opacity: 1.0;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+     position:relative;
+     width:11.8em;
 }
 
 /*SELECTION BOXES FOR ALL SITES*/
