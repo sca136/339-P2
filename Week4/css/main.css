@@ -692,6 +692,7 @@ nav {
   display:-webkit-flex;
 	display:flex;
 	margin-left:15em;
+  margin-top:1em;
 	
 }
 
@@ -992,7 +993,7 @@ select:-ms-expand {
 
 /* ABOUT PAGE */
 .about {
-	background: url('../image/about.jpg');
+	background: url('../image/about.jpg') center center;
 	background-repeat: no-repeat;
 	background-size:cover;
 	width:100%;
