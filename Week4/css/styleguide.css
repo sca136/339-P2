@@ -4,7 +4,7 @@ body{
   color:#000000;
 }
 
-nav {
+/*nav{
   position:relative;
   top:0;
   left:0;
@@ -15,7 +15,8 @@ nav {
   -webkit-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
+}*/
+
 
 .button-box{
   padding:0;
@@ -23,8 +24,25 @@ nav {
   border:solid 2px #FFFFFF;
 }
 
-.topbox {
-  padding:0;
+.navBox-style{
+  width: 15em;
+  float: left;
+  display: block;
+  height:100%;
+
+}
+
+.topbox-style{
+  position:relative;
+  top:0;
+  left:0;
+  width:15em;
+  background-color:#FFFFFF;
+  opacity: 0.9;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .grids {
@@ -103,6 +121,7 @@ nav {
 
 
 .box-style{
+
     -ms-flex-wrap: wrap;
     -moz-flex-wrap:wrap;
     -webkit-flex-wrap:wrap;
@@ -334,6 +353,10 @@ nav {
 
 
 @media(max-width: 50em){
+
+    .button-item-nav{
+      margin: 0 auto;
+    }
 
     .content-container{
       margin:0;

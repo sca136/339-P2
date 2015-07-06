@@ -20,7 +20,7 @@ hr{
 }
 
 iframe {
-  frameBorder:0;
+  border:0;
   z-index: 0;
   height:100%;
   width: 100%;
@@ -144,6 +144,10 @@ nav {
     left:0;
 }
 
+.active {
+  width:30%;
+}
+
 .button-item-nav:before {
   content: "";
   position: absolute;
@@ -158,7 +162,7 @@ nav {
 .social-media {
   margin-top:1.1em;
   margin-bottom:1.1em;
-  display:block
+  display:block;
   width:100%;
   text-align:center;
   bottom:0;
