@@ -285,6 +285,8 @@ nav {
   border-right-width:2px;
   border-top-width:2px;
 
+
+
 	flex-grow:1;
 	-moz-transition: all 0.5s ease 0s;
 	-webkit-transition: all 0.5s ease 0s;
@@ -296,6 +298,7 @@ nav {
 	min-width:53%;
 	background-color: rgba(215, 132, 2, 1);
 }
+
 
 
 .box-item-nav-2 {
@@ -390,7 +393,11 @@ nav {
 	height:15em;
 	position:relative;
 	opacity:0.7;
+  transition: all 0.3s ease 0s;
 }
+  .trending:hover {
+    opacity:1;
+  }
 
 .salty {
 	background: url('../image/salty.jpg');
@@ -429,7 +436,11 @@ nav {
 	width:100%;
 	height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
+  .pepperlunch:hover {
+  opacity:1;
+ }
 
 .ramen {
 	background: url('../image/ramen2.jpg');
@@ -437,6 +448,7 @@ nav {
 	width:100%;
 	height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
 
 
@@ -444,17 +456,26 @@ nav {
 		color:#ffffff;
 	}
 
+  .ramen:hover {
+    opacity:1;
+  }
+
 .gyo {
 	background: url('../image/gyo.jpg');
 	background-size: cover;
 	width:100%;
 	height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
 
 	.gyo p {
 		color:#ffffff;
 	}
+
+  .gyo:hover {
+    opacity:1;
+  }
 
 
 
@@ -464,10 +485,15 @@ nav {
   width:100%;
   height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
 
   .sweet-tree p {
     color:#ffffff;
+  }
+
+  .sweet-tree:hover {
+    opacity:1;
   }
 
 
@@ -477,6 +503,7 @@ nav {
   width:100%;
   height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
 
   .sweet-earnest p {
@@ -490,6 +517,7 @@ nav {
   width:100%;
   height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
 
   .sweet-cookies p {
@@ -503,6 +531,7 @@ nav {
   width:100%;
   height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
 
   .sweet-theirry p {
@@ -515,6 +544,7 @@ nav {
   width:100%;
   height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
 
   .sweet-mango p {
@@ -527,6 +557,7 @@ nav {
   width:100%;
   height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
 
   .sweet-nero p {
@@ -540,8 +571,13 @@ nav {
   background-size: cover;
   width:100%;
   height:12.5em;
-  opacity:0.8;  
+  opacity:0.8;
+  transition: all 0.3s ease 0s;  
 }
+
+  .medina:hover {
+    opacity:1;
+  }
 
 
 .medina1 {
@@ -549,7 +585,6 @@ nav {
 	background-size: cover;
 	width:100%;
 	height:18em;
-  opacity:0.8;
 }
 
 	.medina p {
@@ -588,11 +623,16 @@ nav {
 	width:100%;
 	height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
 
 	.dinesty p{
 		color:#ffffff;
 	}
+
+  .dinesty:hover {
+    opacity:1;
+  }
 
 
 .hubrestaurant {
@@ -607,17 +647,26 @@ nav {
 		color:#ffffff;
 	}
 
+  .hubrestaurant:hover {
+    opacity:1;
+  }
+
 .meatbread {
 	background: url('../image/meatbread.jpg');
 	background-size: cover;
 	width:100%;
 	height:12.5em;
   opacity:0.8;
+  transition: all 0.3s ease 0s;
 }
 
 	.meatbread p {
 		color:#ffffff; 
 	}
+
+  .meatbread:hover {
+    opacity:1;
+  }
 
 
 /*RESTDETAILS and RESRVATIONS FOR TEXTBOX*/
@@ -1128,6 +1177,7 @@ select:-ms-expand {
 .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
   color: white;
 }
+
 .hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -1651,6 +1701,7 @@ select:-ms-expand {
     width:80%;
     margin: 0 auto;
     margin-top:1em;
+
   }
 
   .news-text {
