@@ -30,6 +30,10 @@ iframe {
   position:absolute;
 }
 
+section {
+  width:100%;
+}
+
 /*LEFT NAVIGATION BAR*/
 .navBox {
   width: 15em;
